@@ -1,4 +1,4 @@
-import { ContainerReflection } from 'typedoc';
+import { ContainerReflection, ReflectionKind } from 'typedoc';
 import { heading, horizontalRule } from '../els';
 import { getSecondaryHeadingLevel } from '../support/helpers';
 import { MarkdownThemeRenderContext } from '../theme-context';
@@ -31,14 +31,18 @@ export function members(
           );
         } else {
           md.push(heading(headingLevel, group.title));
-          group.children
-            .filter((item) => !item.hasOwnDocument)
-            .forEach((groupChild, index) => {
-              md.push(context.partials.member(groupChild));
-              if (index !== group.children.length - 1) {
-                md.push(horizontalRule());
-              }
-            });
+          if (container.kind === ReflectionKind.Enum) {
+            md.push(context.partials.propertiesTable(group.children));
+          } else {
+            group.children
+              .filter((item) => !item.hasOwnDocument)
+              .forEach((groupChild, index) => {
+                md.push(context.partials.member(groupChild));
+                if (index !== group.children.length - 1) {
+                  md.push(horizontalRule());
+                }
+              });
+          }
           if (container.groups && container.groups.length) {
             if (groupIndex !== container.groups.length - 1) {
               md.push(horizontalRule());

@@ -2,6 +2,7 @@ import {
   ArrayType,
   DeclarationReflection,
   ReferenceType,
+  ReflectionKind,
   SignatureReflection,
 } from 'typedoc';
 import { bold, link } from '../els';
@@ -36,7 +37,7 @@ export function sources(
   if (reflection.sources) {
     if (reflection.sources.length > 1) {
       md.push(bold('Defined in') + ' \n\n');
-    } else {
+    } else if (reflection.kind != ReflectionKind.EnumMember) {
       md.push(bold('Defined in:') + ' ');
     }
 

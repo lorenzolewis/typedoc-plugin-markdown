@@ -9,10 +9,17 @@ export function propertiesTable(
   const comments = props.map((param) => !!param.comment?.hasVisibleComponent());
   const hasComments = !comments.every((value) => !value);
 
+  const sources = props.map((param) => !!param.sources?.length);
+  const hasSources = !sources.every((value) => !value);
+
   const headers = ['Name', 'Type'];
 
   if (hasComments) {
     headers.push('Description');
+  }
+
+  if (hasSources) {
+    headers.push('Source');
   }
 
   const flattenParams = (current: any) => {
@@ -60,6 +67,19 @@ export function propertiesTable(
       if (comments) {
         row.push(
           stripLineBreaks(context.partials.comment(comments)).replace(
+            /\|/g,
+            '\\|',
+          ),
+        );
+      } else {
+        row.push('-');
+      }
+    }
+
+    if (hasSources) {
+      if (property.sources) {
+        row.push(
+          stripLineBreaks(context.partials.sources(property)).replace(
             /\|/g,
             '\\|',
           ),
