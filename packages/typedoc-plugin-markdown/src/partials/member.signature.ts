@@ -31,8 +31,9 @@ export function signatureMember(
   }
 
   if (signature.type) {
-    md.push(bold('Returns'));
-    md.push(context.partials.someType(signature.type, 'all'));
+    md.push(
+      bold('Returns: ') + context.partials.someType(signature.type, 'all'),
+    );
 
     if (signature.comment?.blockTags.length) {
       const tags = signature.comment.blockTags
