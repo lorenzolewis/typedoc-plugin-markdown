@@ -14,9 +14,9 @@ export function comment(context: MarkdownThemeRenderContext, comment: Comment) {
       .filter((tag) => tag.tag !== '@returns')
       .map(
         (tag) =>
-          `**\`${camelToTitleCase(
+          `**${camelToTitleCase(
             tag.tag.substring(1),
-          )}\`**\n\n${context.partials.commentParts(tag.content)}`,
+          )}**\n\n${context.partials.commentParts(tag.content)}`,
       );
     md.push(tags.join('\n\n'));
   }
