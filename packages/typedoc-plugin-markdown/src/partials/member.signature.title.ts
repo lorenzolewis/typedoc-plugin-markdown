@@ -5,7 +5,7 @@ export function signatureTitle(
   context: MarkdownThemeRenderContext,
   signature: SignatureReflection,
 ) {
-  const md: string[] = [''];
+  const md: string[] = ['> '];
 
   if (signature.parent && signature.parent.flags?.length > 0) {
     md.push(
