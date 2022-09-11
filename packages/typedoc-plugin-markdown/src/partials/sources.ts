@@ -34,7 +34,12 @@ export function sources(
   }
 
   if (reflection.sources) {
-    md.push(bold('Defined in') + ' ');
+    if (reflection.sources.length > 1) {
+      md.push(bold('Defined in') + ' \n\n');
+    } else {
+      md.push(bold('Defined in:') + ' ');
+    }
+
     reflection.sources.forEach((source) => {
       if (source.url) {
         md.push(
@@ -43,9 +48,10 @@ export function sources(
       } else {
         md.push(`${escapeChars(source.fileName)}:${source.line}`);
       }
+      md.push('\n\n');
     });
   }
-  return md.join('\n\n');
+  return md.join('');
 }
 
 const typeAndParent = (
