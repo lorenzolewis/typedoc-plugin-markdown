@@ -44,10 +44,10 @@ export function reflectionTemplate(
     });
   }
 
-  if ('indexSignature' in page.model && page.model.indexSignature) {
-    md.push(heading(2, 'Indexable'));
-    md.push('context.indexSignaturePartial(props.model.indexSignature)');
-  }
+  // if ('indexSignature' in page.model && page.model.indexSignature) {
+  //   md.push(heading(2, 'Indexable'));
+  //   md.push('context.indexSignaturePartial(props.model.indexSignature)');
+  // }
 
   md.push(context.partials.toc(page.model));
 
