@@ -31,7 +31,11 @@ export function members(
           );
         } else {
           md.push(heading(headingLevel, group.title));
-          if (container.kind === ReflectionKind.Enum) {
+          if (
+            [ReflectionKind.Interface, ReflectionKind.Enum].includes(
+              container.kind,
+            )
+          ) {
             md.push(context.partials.propertiesTable(group.children));
           } else {
             group.children

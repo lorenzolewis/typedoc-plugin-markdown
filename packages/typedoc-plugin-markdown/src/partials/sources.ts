@@ -37,7 +37,9 @@ export function sources(
   if (reflection.sources) {
     if (reflection.sources.length > 1) {
       md.push(bold('Defined in') + ' \n\n');
-    } else if (reflection.kind != ReflectionKind.EnumMember) {
+    } else if (
+      [ReflectionKind.Interface, ReflectionKind.Enum].includes(reflection.kind)
+    ) {
       md.push(bold('Defined in:') + ' ');
     }
 
