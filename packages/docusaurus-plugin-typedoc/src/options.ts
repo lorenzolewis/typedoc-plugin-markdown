@@ -17,6 +17,7 @@ const DEFAULT_PLUGIN_OPTIONS: PluginOptions = {
   hideBreadcrumbs: true,
   hidePageTitle: false,
   hideHorizontalDivider: false,
+  embedTitleInCodeBlocks: false,
   entryDocument: 'README.md',
   plugin: ['none'],
   watch: false,

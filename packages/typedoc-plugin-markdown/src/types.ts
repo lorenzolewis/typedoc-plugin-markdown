@@ -5,6 +5,7 @@ export interface TypedocPluginMarkdownOptions extends TypeDocOptionMap {
   hideInPageTOC: boolean;
   hidePageTitle: boolean;
   hideHorizontalDivider: boolean;
+  embedTitleInCodeBlocks: boolean;
   entryDocument: string;
   indexTitle: string;
   namedAnchors: boolean;
