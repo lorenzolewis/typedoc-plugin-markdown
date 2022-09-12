@@ -11,6 +11,7 @@ export function declarationMember(
 
   const headingLevel = getQuaternaryHeadingLevel(reflection);
 
+  // Possibly comment out because it's causing a duplicate
   md.push(context.partials.declarationMemberTitle(reflection));
 
   const typeDeclaration = (reflection.type as any)
