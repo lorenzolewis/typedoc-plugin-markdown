@@ -38,8 +38,18 @@ export function members(
           ) {
             md.push(context.partials.propertiesTable(group.children));
           } else {
+            // Render properties as a table
+            const properties = group.children.filter(
+              (item) => item.kind === ReflectionKind.Property,
+            );
+            if (properties.length > 0) {
+              md.push(context.partials.propertiesTable(properties));
+            }
             group.children
-              .filter((item) => !item.hasOwnDocument)
+              .filter(
+                (item) =>
+                  !item.hasOwnDocument && item.kind != ReflectionKind.Property,
+              )
               .forEach((groupChild, index) => {
                 md.push(context.partials.member(groupChild));
                 if (index !== group.children.length - 1) {
