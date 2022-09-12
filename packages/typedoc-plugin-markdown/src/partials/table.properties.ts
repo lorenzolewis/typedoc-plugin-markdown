@@ -43,7 +43,7 @@ export function propertiesTable(
       : [...acc, current];
   };
 
-  const properties = props.reduce(
+  const properties: DeclarationReflection[] = props.reduce(
     (acc: any, current: any) => parseParams(current, acc),
     [],
   );
@@ -56,7 +56,9 @@ export function propertiesTable(
       property.name.match(/[\\`\\|]/g) !== null
         ? escapeChars(getName(context, property))
         : `\`${getName(context, property)}\``;
-    nameCol.push(name);
+    nameCol.push(
+      `<div class="anchor-with-padding" id="${property.getFriendlyFullName()}"><a href="#${property.getFriendlyFullName()}">${name}</a></div>`,
+    );
     row.push(nameCol.join(' '));
     row.push(
       context.partials.someType(propertyType).replace(/(?<!\\)\|/g, '\\|'),
