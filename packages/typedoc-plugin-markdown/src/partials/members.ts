@@ -31,11 +31,11 @@ export function members(
           );
         } else {
           md.push(heading(headingLevel, group.title));
-          if (
-            [ReflectionKind.Interface, ReflectionKind.Enum].includes(
-              container.kind,
-            )
-          ) {
+
+          let reflectionKinds: ReflectionKind[] = [];
+          reflectionKinds = [ReflectionKind.Interface, ReflectionKind.Enum];
+
+          if (reflectionKinds.includes(container.kind)) {
             md.push(context.partials.propertiesTable(group.children));
           } else {
             // Render properties as a table
