@@ -36,7 +36,7 @@ export function members(
           let reflectionKinds: ReflectionKind[] = [];
           // prettier-ignore
           reflectionKinds = [
-            ReflectionKind.Interface,
+            // ReflectionKind.Interface,
             ReflectionKind.Enum
           ];
 

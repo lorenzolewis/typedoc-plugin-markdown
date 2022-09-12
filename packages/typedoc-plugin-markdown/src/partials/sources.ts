@@ -36,7 +36,7 @@ export function sources(
 
   const reflectionTable: ReflectionKind[] = [
     ReflectionKind.EnumMember,
-    ReflectionKind.Property,
+    // ReflectionKind.Property,
   ];
 
   if (reflection.sources) {
@@ -54,7 +54,6 @@ export function sources(
       } else {
         md.push(`${escapeChars(source.fileName)}:${source.line}`);
       }
-      md.push('\n\n');
     });
   }
   return md.join('');
