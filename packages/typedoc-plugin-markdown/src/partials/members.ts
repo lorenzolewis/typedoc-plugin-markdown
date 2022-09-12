@@ -34,18 +34,20 @@ export function members(
 
           // Choose which reflection kinds to render a table for
           let reflectionKinds: ReflectionKind[] = [];
+          // prettier-ignore
           reflectionKinds = [
-            // ReflectionKind.Interface,
-            ReflectionKind.Enum,
+            ReflectionKind.Interface,
+            ReflectionKind.Enum
           ];
 
           let children = group.children;
 
           if (reflectionKinds.includes(container.kind)) {
-            md.push(context.partials.propertiesTable(group.children));
             // Pulls out any properties
-            const properties = children.filter(
-              (item) => item.kind === ReflectionKind.Property,
+            const properties = children.filter((item) =>
+              [ReflectionKind.Property, ReflectionKind.EnumMember].includes(
+                item.kind,
+              ),
             );
             // Render properties as a table
             if (properties.length > 0) {

@@ -34,12 +34,15 @@ export function sources(
     md.push(typeAndParent(context, reflection.overwrites));
   }
 
+  const reflectionTable: ReflectionKind[] = [
+    ReflectionKind.EnumMember,
+    ReflectionKind.Property,
+  ];
+
   if (reflection.sources) {
     if (reflection.sources.length > 1) {
       md.push(bold('Defined in') + ' \n\n');
-    } else if (
-      [ReflectionKind.Interface, ReflectionKind.Enum].includes(reflection.kind)
-    ) {
+    } else if (!reflectionTable.includes(reflection.kind)) {
       md.push(bold('Defined in:') + ' ');
     }
 
