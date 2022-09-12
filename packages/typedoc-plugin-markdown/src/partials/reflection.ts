@@ -52,6 +52,8 @@ export function reflection(
 
   md.push(context.partials.toc(reflection));
 
+  md.push(horizontalRule(context));
+
   md.push(context.partials.members(reflection));
 
   return md.join('\n\n');
