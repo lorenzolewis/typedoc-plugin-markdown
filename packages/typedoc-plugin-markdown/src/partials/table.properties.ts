@@ -19,7 +19,7 @@ export function propertiesTable(
   }
 
   if (hasSources) {
-    headers.push('Source');
+    headers.push('Defined in');
   }
 
   const flattenParams = (current: any) => {
