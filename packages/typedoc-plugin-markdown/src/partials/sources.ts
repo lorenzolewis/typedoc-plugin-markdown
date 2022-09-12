@@ -20,18 +20,27 @@ export function sources(
   const headingLevel = getQuaternaryHeadingLevel(reflection);
 
   if (reflection.implementationOf) {
-    md.push(bold('Implementation of') + ' ');
-    md.push(typeAndParent(context, reflection.implementationOf));
+    md.push(
+      `${bold('Implementation of:')} ${typeAndParent(
+        context,
+        reflection.implementationOf,
+      )}`,
+    );
   }
 
   if (reflection.inheritedFrom) {
-    md.push(bold('Inherited from') + ' ');
-    md.push(typeAndParent(context, reflection.inheritedFrom));
+    md.push(
+      `${bold('Inherited from:')} ${typeAndParent(
+        context,
+        reflection.inheritedFrom,
+      )}`,
+    );
   }
 
   if (reflection.overwrites) {
-    md.push(bold('Overrides') + ' ');
-    md.push(typeAndParent(context, reflection.overwrites));
+    md.push(
+      `${bold('Overrides:')} ${typeAndParent(context, reflection.overwrites)}`,
+    );
   }
 
   const reflectionTable: ReflectionKind[] = [
@@ -40,23 +49,31 @@ export function sources(
   ];
 
   if (reflection.sources) {
+    const sources: string[] = [];
     if (reflection.sources.length > 1) {
-      md.push(bold('Defined in') + ' \n\n');
+      sources.push(bold('Defined in') + ' \n\n');
     } else if (!reflectionTable.includes(reflection.kind)) {
-      md.push(bold('Defined in:') + ' ');
+      sources.push(bold('Defined in:') + ' ');
     }
 
     reflection.sources.forEach((source) => {
       if (source.url) {
-        md.push(
+        sources.push(
           link(`${escapeChars(source.fileName)}:${source.line}`, source.url),
         );
       } else {
-        md.push(`${escapeChars(source.fileName)}:${source.line}`);
+        sources.push(`${escapeChars(source.fileName)}:${source.line}`);
       }
     });
+
+    if (reflection.sources.length > 1) {
+      md.push(sources.join('\n\n'));
+    } else {
+      md.push(sources.join(''));
+    }
   }
-  return md.join('');
+
+  return md.join('\n\n');
 }
 
 const typeAndParent = (
