@@ -32,24 +32,33 @@ export function members(
         } else {
           md.push(heading(headingLevel, group.title));
 
+          // Choose which reflection kinds to render a table for
           let reflectionKinds: ReflectionKind[] = [];
-          reflectionKinds = [ReflectionKind.Interface, ReflectionKind.Enum];
+          reflectionKinds = [
+            // ReflectionKind.Interface,
+            ReflectionKind.Enum,
+          ];
+
+          let children = group.children;
 
           if (reflectionKinds.includes(container.kind)) {
             md.push(context.partials.propertiesTable(group.children));
-          } else {
-            // Render properties as a table
-            const properties = group.children.filter(
+            // Pulls out any properties
+            const properties = children.filter(
               (item) => item.kind === ReflectionKind.Property,
             );
+            // Render properties as a table
             if (properties.length > 0) {
               md.push(context.partials.propertiesTable(properties));
             }
-            group.children
-              .filter(
-                (item) =>
-                  !item.hasOwnDocument && item.kind != ReflectionKind.Property,
-              )
+
+            // Removes any properties from original array as they've already been rendered
+            children = children.filter(
+              (item) => item.kind !== ReflectionKind.Property,
+            );
+          } else {
+            children
+              .filter((item) => !item.hasOwnDocument)
               .forEach((groupChild, index) => {
                 md.push(context.partials.member(groupChild));
                 if (index !== group.children.length - 1) {
