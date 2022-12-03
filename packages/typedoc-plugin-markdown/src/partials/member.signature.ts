@@ -42,13 +42,6 @@ export function signatureMember(
       md.push(tags.join('\n\n'));
     }
 
-    if (signature.comment?.blockTags.length) {
-      const tags = signature.comment.blockTags
-        .filter((tag) => tag.tag === '@returns')
-        .map((tag) => context.partials.commentParts(tag.content));
-      md.push(tags.join('\n\n'));
-    }
-
     if (typeDeclaration?.signatures) {
       typeDeclaration.signatures.forEach((signature) => {
         md.push(context.partials.signatureMember(signature));
