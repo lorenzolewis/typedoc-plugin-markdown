@@ -1,4 +1,4 @@
-import { ContainerReflection } from 'typedoc';
+import { ContainerReflection, ReflectionKind } from 'typedoc';
 import { heading, horizontalRule } from '../support/els';
 import { getSecondaryHeadingLevel } from '../support/helpers';
 import { MarkdownThemeRenderContext } from '../theme-context';
