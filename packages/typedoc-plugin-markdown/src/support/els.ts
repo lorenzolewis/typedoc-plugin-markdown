@@ -1,4 +1,4 @@
-import { MarkdownThemeRenderContext } from './theme-context';
+import { MarkdownThemeRenderContext } from '../theme-context';
 
 export const heading = (level: number, text: string) =>
   `${[...Array(level)].map(() => '#').join('')} ${text}`;

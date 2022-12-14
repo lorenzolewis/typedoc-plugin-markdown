@@ -1,7 +1,7 @@
 import { Comment } from 'typedoc';
+import { camelToTitleCase } from '../support/utils';
 import { MarkdownThemeRenderContext } from '../theme-context';
-import { camelToTitleCase } from '../utils';
-import { bold } from '../els';
+import { bold } from '../support/els';
 
 export function comment(context: MarkdownThemeRenderContext, comment: Comment) {
   const md: string[] = [];
