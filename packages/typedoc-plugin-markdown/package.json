@@ -12,7 +12,7 @@
     "prepublishOnly": "npm run lint && npm run build && npm run test",
     "prebuild": "ts-node scripts/build-resources",
     "build": "rm -rf dist && tsc",
-    "test": "jest --colors -u -t \"Output File Strategy\"",
+    "test": "jest --colors -t \"Markdown Output Files\"",
     "build-and-test": "npm run build && npm run test",
     "docs": "npm run build && yarn run docs:md && yarn run docs:html",
     "docs:md": "typedoc  --plugin typedoc-plugin-markdown --options ../../stubs/typedoc.json --out ./docs/md",

@@ -1,0 +1,3430 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Markdown Output Files Structure should generate same files 1`] = `
+"# My TypeScript API
+
+## Index
+
+### Namespaces
+
+- [categories](namespaces/categories.md)
+- [classes](namespaces/classes.md)
+- [comments](namespaces/comments.md)
+- [declarations](namespaces/declarations.md)
+- [generics](namespaces/generics.md)
+- [hierarchy](namespaces/hierarchy.md)
+- [members](namespaces/members.md)
+- [reflections](namespaces/reflections.md)
+- [signatures](namespaces/signatures.md)
+- [sources](namespaces/sources.md)
+- [theme](namespaces/theme.md)
+- [toc](namespaces/toc.md)
+- [types](namespaces/types.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 2`] = `
+"[My TypeScript API](../README.md) / [classes](../namespaces/classes.md) / Point
+
+# Class: Point
+
+## Index
+
+### Constructors
+
+- [constructor](classes.Point.md#constructor)
+
+### Properties
+
+- [x](classes.Point.md#x)
+- [y](classes.Point.md#y)
+
+### Methods
+
+- [getPoint](classes.Point.md#getpoint)
+
+## Constructors
+
+### constructor
+
+» **new Point**(\`x?\`: \`number\`, \`y?\`: \`number\`): [\`Point\`](classes.Point.md)
+
+**Parameters**
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| \`x\` | \`number\` | \`0\` |
+| \`y\` | \`number\` | \`0\` |
+
+**Defined in** 
+
+[classes.ts:4](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/classes.ts#L4)
+
+## Properties
+
+### x
+
+ **x**: \`number\`
+
+**Defined in** 
+
+[classes.ts:2](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/classes.ts#L2)
+
+### y
+
+ **y**: \`number\`
+
+**Defined in** 
+
+[classes.ts:3](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/classes.ts#L3)
+
+## Methods
+
+### getPoint
+
+» **getPoint**(): \`void\`
+
+**Returns**
+
+\`void\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 3`] = `
+"[My TypeScript API](../README.md) / [comments](../namespaces/comments.md) / CommentClass
+
+# Class: CommentClass
+
+Comment for class
+
+## Index
+
+### Constructors
+
+- [constructor](comments.CommentClass.md#constructor)
+
+### Properties
+
+- [comment](comments.CommentClass.md#comment)
+
+### Methods
+
+- [getComment](comments.CommentClass.md#getcomment)
+
+## Constructors
+
+### constructor
+
+» **new CommentClass**(\`comment\`: \`string\`): [\`CommentClass\`](comments.CommentClass.md)
+
+Comment for constructor
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`comment\` | \`string\` |
+
+**Defined in** 
+
+[comments.ts:91](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/comments.ts#L91)
+
+## Properties
+
+### comment
+
+ **comment**: \`string\`
+
+Comment for property
+
+**Defined in** 
+
+[comments.ts:87](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/comments.ts#L87)
+
+## Methods
+
+### getComment
+
+» **getComment**(): \`string\`
+
+Comment for method
+
+**Returns**
+
+\`string\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 4`] = `
+"[My TypeScript API](../README.md) / [generics](../namespaces/generics.md) / ClassWithTypeParams
+
+# Class: ClassWithTypeParams<T, V\\>
+
+Comments for typeParams
+
+**\`Typeparam\`**
+
+T - Some type param
+
+**\`Typeparam\`**
+
+V - Some other type param
+
+**Type parameters**
+
+- \`T\`
+- \`V\`
+
+## Index
+
+### Constructors
+
+- [constructor](generics.ClassWithTypeParams.md#constructor)
+
+### Properties
+
+- [propT](generics.ClassWithTypeParams.md#propt)
+- [propV](generics.ClassWithTypeParams.md#propv)
+
+## Constructors
+
+### constructor
+
+» **new ClassWithTypeParams**<\`T\`, \`V\`\\>(): [\`ClassWithTypeParams\`](generics.ClassWithTypeParams.md)<\`T\`, \`V\`\\>
+
+**Type parameters**
+
+- \`T\`
+- \`V\`
+
+## Properties
+
+### propT
+
+ **propT**: \`T\`
+
+**Defined in** 
+
+[generics.ts:7](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/generics.ts#L7)
+
+### propV
+
+ **propV**: \`V\`
+
+**Defined in** 
+
+[generics.ts:8](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/generics.ts#L8)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 5`] = `
+"[My TypeScript API](../README.md) / [hierarchy](../namespaces/hierarchy.md) / ChildClassA
+
+# Class: ChildClassA
+
+**Hierarchy**
+
+- [\`ParentClass\`](hierarchy.ParentClass.md)
+   - **ChildClassA**
+     - [\`GrandChildClassA\`](hierarchy.GrandChildClassA.md)
+
+## Index
+
+### Constructors
+
+- [constructor](hierarchy.ChildClassA.md#constructor)
+
+## Constructors
+
+### constructor
+
+» **new ChildClassA**(): [\`ChildClassA\`](hierarchy.ChildClassA.md)
+
+**Inherited from** 
+
+[ParentClass](hierarchy.ParentClass.md).[constructor](hierarchy.ParentClass.md#constructor)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 6`] = `
+"[My TypeScript API](../README.md) / [hierarchy](../namespaces/hierarchy.md) / ChildClassB
+
+# Class: ChildClassB
+
+**Hierarchy**
+
+- [\`ParentClass\`](hierarchy.ParentClass.md)
+   - **ChildClassB**
+
+## Index
+
+### Constructors
+
+- [constructor](hierarchy.ChildClassB.md#constructor)
+
+## Constructors
+
+### constructor
+
+» **new ChildClassB**(): [\`ChildClassB\`](hierarchy.ChildClassB.md)
+
+**Inherited from** 
+
+[ParentClass](hierarchy.ParentClass.md).[constructor](hierarchy.ParentClass.md#constructor)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 7`] = `
+"[My TypeScript API](../README.md) / [hierarchy](../namespaces/hierarchy.md) / GrandChildClassA
+
+# Class: GrandChildClassA
+
+**Hierarchy**
+
+- [\`ChildClassA\`](hierarchy.ChildClassA.md)
+   - **GrandChildClassA**
+
+## Index
+
+### Constructors
+
+- [constructor](hierarchy.GrandChildClassA.md#constructor)
+
+## Constructors
+
+### constructor
+
+» **new GrandChildClassA**(): [\`GrandChildClassA\`](hierarchy.GrandChildClassA.md)
+
+**Inherited from** 
+
+[ChildClassA](hierarchy.ChildClassA.md).[constructor](hierarchy.ChildClassA.md#constructor)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 8`] = `
+"[My TypeScript API](../README.md) / [hierarchy](../namespaces/hierarchy.md) / ParentClass
+
+# Class: ParentClass
+
+**Hierarchy**
+
+- **ParentClass**
+   - [\`ChildClassA\`](hierarchy.ChildClassA.md)
+   - [\`ChildClassB\`](hierarchy.ChildClassB.md)
+
+## Index
+
+### Constructors
+
+- [constructor](hierarchy.ParentClass.md#constructor)
+
+## Constructors
+
+### constructor
+
+» **new ParentClass**(): [\`ParentClass\`](hierarchy.ParentClass.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 9`] = `
+"[My TypeScript API](../README.md) / [members](../namespaces/members.md) / ClassWithAccessorMembers
+
+# Class: ClassWithAccessorMembers
+
+## Index
+
+### Constructors
+
+- [constructor](members.ClassWithAccessorMembers.md#constructor)
+
+### Properties
+
+- [\\_private](members.ClassWithAccessorMembers.md#_private)
+
+### Accessors
+
+- [getter](members.ClassWithAccessorMembers.md#getter)
+- [setter](members.ClassWithAccessorMembers.md#setter)
+
+## Constructors
+
+### constructor
+
+» **new ClassWithAccessorMembers**(): [\`ClassWithAccessorMembers\`](members.ClassWithAccessorMembers.md)
+
+## Properties
+
+### \\_private
+
+\`Private\` **\\_private**: \`string\`
+
+**Defined in** 
+
+[members.ts:9](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/members.ts#L9)
+
+## Accessors
+
+### getter
+
+» **getter**(): \`string\`
+
+**Returns**
+
+\`string\`
+
+### setter
+
+» **setter**(\`value\`: \`string\`): \`void\`
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`value\` | \`string\` |
+
+**Returns**
+
+\`void\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 10`] = `
+"[My TypeScript API](../README.md) / [members](../namespaces/members.md) / ReferenceMember
+
+# Class: ReferenceMember
+
+## Index
+
+### Constructors
+
+- [constructor](members.ReferenceMember.md#constructor)
+
+## Constructors
+
+### constructor
+
+» **new ReferenceMember**(): [\`ReferenceMember\`](members.ReferenceMember.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 11`] = `
+"[My TypeScript API](../README.md) / [reflections](../namespaces/reflections.md) / ImplementedClass
+
+# Class: ImplementedClass
+
+comments
+
+**Implements**
+
+- [\`ReflectionClass\`](reflections.ReflectionClass.md)
+
+## Index
+
+### Constructors
+
+- [constructor](reflections.ImplementedClass.md#constructor)
+
+## Constructors
+
+### constructor
+
+» **new ImplementedClass**(): [\`ImplementedClass\`](reflections.ImplementedClass.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 12`] = `
+"[My TypeScript API](../README.md) / [reflections](../namespaces/reflections.md) / ReflectionClass
+
+# Class: ReflectionClass
+
+comments
+
+## Index
+
+### Constructors
+
+- [constructor](reflections.ReflectionClass.md#constructor)
+
+## Constructors
+
+### constructor
+
+» **new ReflectionClass**(): [\`ReflectionClass\`](reflections.ReflectionClass.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 13`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / ClassWithConstructor
+
+# Class: ClassWithConstructor
+
+## Index
+
+### Constructors
+
+- [constructor](signatures.ClassWithConstructor.md#constructor)
+
+## Constructors
+
+### constructor
+
+» **new ClassWithConstructor**(\`x\`: \`string\`, \`y\`: \`string\`): [\`ClassWithConstructor\`](signatures.ClassWithConstructor.md)
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`x\` | \`string\` |
+| \`y\` | \`string\` |
+
+**Defined in** 
+
+[signatures.ts:213](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/signatures.ts#L213)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 14`] = `
+"[My TypeScript API](../README.md) / [sources](../namespaces/sources.md) / AnotherClass
+
+# Class: AnotherClass
+
+**Hierarchy**
+
+- [\`SomeClass\`](sources.SomeClass.md)
+   - **AnotherClass**
+
+## Index
+
+### Constructors
+
+- [constructor](sources.AnotherClass.md#constructor)
+
+### Properties
+
+- [prop](sources.AnotherClass.md#prop)
+
+## Constructors
+
+### constructor
+
+» **new AnotherClass**(): [\`AnotherClass\`](sources.AnotherClass.md)
+
+**Overrides** 
+
+[SomeClass](sources.SomeClass.md).[constructor](sources.SomeClass.md#constructor)
+
+**Defined in** 
+
+[sources.ts:11](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/sources.ts#L11)
+
+## Properties
+
+### prop
+
+ **prop**: \`string\`
+
+**Overrides** 
+
+[SomeClass](sources.SomeClass.md).[prop](sources.SomeClass.md#prop)
+
+**Defined in** 
+
+[sources.ts:10](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/sources.ts#L10)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 15`] = `
+"[My TypeScript API](../README.md) / [sources](../namespaces/sources.md) / SomeClass
+
+# Class: SomeClass
+
+**Hierarchy**
+
+- **SomeClass**
+   - [\`AnotherClass\`](sources.AnotherClass.md)
+   - [\`AnotherInterface\`](../interfaces/sources.AnotherInterface.md)
+
+**Implements**
+
+- [\`SomeInterface\`](../interfaces/sources.SomeInterface.md)
+
+## Index
+
+### Constructors
+
+- [constructor](sources.SomeClass.md#constructor)
+
+### Properties
+
+- [prop](sources.SomeClass.md#prop)
+
+## Constructors
+
+### constructor
+
+» **new SomeClass**(): [\`SomeClass\`](sources.SomeClass.md)
+
+## Properties
+
+### prop
+
+ **prop**: \`string\`
+
+**Implementation of** 
+
+[SomeInterface](../interfaces/sources.SomeInterface.md).[prop](../interfaces/sources.SomeInterface.md#prop)
+
+**Defined in** 
+
+[sources.ts:6](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/sources.ts#L6)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 16`] = `
+"[My TypeScript API](../README.md) / [theme](../namespaces/theme.md) / ClassItemA
+
+# Class: ClassItemA
+
+## Index
+
+### Constructors
+
+- [constructor](theme.ClassItemA.md#constructor)
+
+## Constructors
+
+### constructor
+
+» **new ClassItemA**(): [\`ClassItemA\`](theme.ClassItemA.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 17`] = `
+"[My TypeScript API](../README.md) / [theme](../namespaces/theme.md) / ClassItemB
+
+# Class: ClassItemB
+
+## Index
+
+### Constructors
+
+- [constructor](theme.ClassItemB.md#constructor)
+
+## Constructors
+
+### constructor
+
+» **new ClassItemB**(): [\`ClassItemB\`](theme.ClassItemB.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 18`] = `
+"[My TypeScript API](../README.md) / [theme](../namespaces/theme.md) / [namespaceA](../namespaces/theme.namespaceA.md) / SomeNestedClass
+
+# Class: SomeNestedClass
+
+## Index
+
+### Constructors
+
+- [constructor](theme.namespaceA.SomeNestedClass.md#constructor)
+
+## Constructors
+
+### constructor
+
+» **new SomeNestedClass**(): [\`SomeNestedClass\`](theme.namespaceA.SomeNestedClass.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 19`] = `
+"[My TypeScript API](../README.md) / [toc](../namespaces/toc.md) / SomeClass
+
+# Class: SomeClass
+
+## Index
+
+### Constructors
+
+- [constructor](toc.SomeClass.md#constructor)
+
+### Methods
+
+- [someMethod](toc.SomeClass.md#somemethod)
+
+## Constructors
+
+### constructor
+
+» **new SomeClass**(): [\`SomeClass\`](toc.SomeClass.md)
+
+## Methods
+
+### someMethod
+
+» **someMethod**(): \`boolean\`
+
+**Returns**
+
+\`boolean\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 20`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / IntersectionClassA
+
+# Class: IntersectionClassA
+
+## Index
+
+### Constructors
+
+- [constructor](types.IntersectionClassA.md#constructor)
+
+## Constructors
+
+### constructor
+
+» **new IntersectionClassA**(): [\`IntersectionClassA\`](types.IntersectionClassA.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 21`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / IntersectionClassB
+
+# Class: IntersectionClassB
+
+## Index
+
+### Constructors
+
+- [constructor](types.IntersectionClassB.md#constructor)
+
+## Constructors
+
+### constructor
+
+» **new IntersectionClassB**(): [\`IntersectionClassB\`](types.IntersectionClassB.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 22`] = `
+"[My TypeScript API](../README.md) / [declarations](../namespaces/declarations.md) / EnumDeclarations
+
+# Enumeration: EnumDeclarations
+
+## Index
+
+### Enumeration Members
+
+- [Down](declarations.EnumDeclarations.md#down)
+- [Left](declarations.EnumDeclarations.md#left)
+- [Right](declarations.EnumDeclarations.md#right)
+- [Up](declarations.EnumDeclarations.md#up)
+
+## Enumeration Members
+
+### Down
+
+ **Down** = \`1\`
+
+**Defined in** 
+
+[declarations.ts:88](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L88)
+
+### Left
+
+ **Left** = \`2\`
+
+**Defined in** 
+
+[declarations.ts:89](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L89)
+
+### Right
+
+ **Right** = \`3\`
+
+**Defined in** 
+
+[declarations.ts:90](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L90)
+
+### Up
+
+ **Up** = \`0\`
+
+**Defined in** 
+
+[declarations.ts:87](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L87)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 23`] = `
+"[My TypeScript API](../README.md) / [declarations](../namespaces/declarations.md) / EnumDeclarationsWithDefaults
+
+# Enumeration: EnumDeclarationsWithDefaults
+
+## Index
+
+### Enumeration Members
+
+- [East](declarations.EnumDeclarationsWithDefaults.md#east)
+- [North](declarations.EnumDeclarationsWithDefaults.md#north)
+- [South](declarations.EnumDeclarationsWithDefaults.md#south)
+- [West](declarations.EnumDeclarationsWithDefaults.md#west)
+
+## Enumeration Members
+
+### East
+
+ **East** = \`"East"\`
+
+**Defined in** 
+
+[declarations.ts:96](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L96)
+
+### North
+
+ **North** = \`"North"\`
+
+**Defined in** 
+
+[declarations.ts:94](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L94)
+
+### South
+
+ **South** = \`"South"\`
+
+**Defined in** 
+
+[declarations.ts:95](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L95)
+
+### West
+
+ **West** = \`"West"\`
+
+**Defined in** 
+
+[declarations.ts:97](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L97)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 24`] = `
+"[My TypeScript API](../README.md) / [reflections](../namespaces/reflections.md) / EnumReflection
+
+# Enumeration: EnumReflection
+
+## Index
+
+### Enumeration Members
+
+- [Down](reflections.EnumReflection.md#down)
+- [Left](reflections.EnumReflection.md#left)
+- [Right](reflections.EnumReflection.md#right)
+- [Up](reflections.EnumReflection.md#up)
+
+## Enumeration Members
+
+### Down
+
+ **Down** = \`"DOWN"\`
+
+**Defined in** 
+
+[reflections.ts:16](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/reflections.ts#L16)
+
+### Left
+
+ **Left** = \`"LEFT"\`
+
+**Defined in** 
+
+[reflections.ts:17](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/reflections.ts#L17)
+
+### Right
+
+ **Right** = \`"RIGHT"\`
+
+**Defined in** 
+
+[reflections.ts:18](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/reflections.ts#L18)
+
+### Up
+
+ **Up** = \`"UP"\`
+
+**Defined in** 
+
+[reflections.ts:15](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/reflections.ts#L15)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 25`] = `
+"[My TypeScript API](../README.md) / [theme](../namespaces/theme.md) / enumItemA
+
+# Enumeration: enumItemA
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 26`] = `
+"[My TypeScript API](../README.md) / [theme](../namespaces/theme.md) / enumItemB
+
+# Enumeration: enumItemB
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 27`] = `
+"[My TypeScript API](../README.md) / [categories](../namespaces/categories.md) / categoryFunctionA1
+
+# Function: categoryFunctionA1
+
+» **categoryFunctionA1**(): \`boolean\`
+
+**Returns**
+
+\`boolean\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 28`] = `
+"[My TypeScript API](../README.md) / [categories](../namespaces/categories.md) / categoryFunctionA2
+
+# Function: categoryFunctionA2
+
+» **categoryFunctionA2**(): \`boolean\`
+
+**Returns**
+
+\`boolean\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 29`] = `
+"[My TypeScript API](../README.md) / [categories](../namespaces/categories.md) / categoryFunctionA3
+
+# Function: categoryFunctionA3
+
+» **categoryFunctionA3**(): \`boolean\`
+
+**Returns**
+
+\`boolean\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 30`] = `
+"[My TypeScript API](../README.md) / [categories](../namespaces/categories.md) / categoryFunctionB2
+
+# Function: categoryFunctionB2
+
+» **categoryFunctionB2**(): \`boolean\`
+
+**Returns**
+
+\`boolean\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 31`] = `
+"[My TypeScript API](../README.md) / [categories](../namespaces/categories.md) / otherFunctionA
+
+# Function: otherFunctionA
+
+» **otherFunctionA**(): \`boolean\`
+
+**Returns**
+
+\`boolean\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 32`] = `
+"[My TypeScript API](../README.md) / [categories](../namespaces/categories.md) / otherFunctionB
+
+# Function: otherFunctionB
+
+» **otherFunctionB**(): \`boolean\`
+
+**Returns**
+
+\`boolean\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 33`] = `
+"[My TypeScript API](../README.md) / [comments](../namespaces/comments.md) / commentsInReturn
+
+# Function: commentsInReturn
+
+» **commentsInReturn**(): \`void\`
+
+Comments with a return definition
+
+**Returns**
+
+\`void\`
+
+Return comments
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 34`] = `
+"[My TypeScript API](../README.md) / [declarations](../namespaces/declarations.md) / functionDeclaration
+
+# Function: functionDeclaration
+
+» **functionDeclaration**(\`someArg\`: \`number\`): \`boolean\`
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`someArg\` | \`number\` |
+
+**Returns**
+
+\`boolean\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 35`] = `
+"[My TypeScript API](../README.md) / [generics](../namespaces/generics.md) / functionWithGenericConstraints
+
+# Function: functionWithGenericConstraints
+
+» **functionWithGenericConstraints**<\`Type\`, \`Key\`\\>(\`obj\`: \`Type\`, \`key\`: \`Key\`): \`Type\`[\`Key\`]
+
+**Type parameters**
+
+- \`Type\`
+- \`Key\` *extends* \`string\` \\| \`number\` \\| \`symbol\`
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`obj\` | \`Type\` |
+| \`key\` | \`Key\` |
+
+**Returns**
+
+\`Type\`[\`Key\`]
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 36`] = `
+"[My TypeScript API](../README.md) / [generics](../namespaces/generics.md) / functionWithTypeParam
+
+# Function: functionWithTypeParam
+
+» **functionWithTypeParam**<\`A\`\\>(): \`boolean\`
+
+**Type parameters**
+
+- \`A\`
+
+**Returns**
+
+\`boolean\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 37`] = `
+"[My TypeScript API](../README.md) / [generics](../namespaces/generics.md) / functionWithTypeParams
+
+# Function: functionWithTypeParams
+
+» **functionWithTypeParams**<\`A\`, \`B\`, \`C\`\\>(): \`boolean\`
+
+**Type parameters**
+
+- \`A\` *extends* [\`ClassWithTypeParams\`](../classes/generics.ClassWithTypeParams.md)<\`string\`, \`number\`, \`A\`\\>Comment for type \`A\`
+- \`B\` = \`string\` \\| \`boolean\`Comment for type \`B\`
+- \`C\` = \`string\`
+
+**Returns**
+
+\`boolean\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 38`] = `
+"[My TypeScript API](../README.md) / [generics](../namespaces/generics.md) / genericsWithDefaults
+
+# Function: genericsWithDefaults
+
+» **genericsWithDefaults**<\`Type\`\\>(): \`void\`
+
+**Type parameters**
+
+- \`Type\` *extends* \`boolean\` = \`boolean\`
+
+**Returns**
+
+\`void\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 39`] = `
+"[My TypeScript API](../README.md) / [members](../namespaces/members.md) / signatureMember
+
+# Function: signatureMember
+
+» **signatureMember**(): \`void\`
+
+**Returns**
+
+\`void\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 40`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / commentsInReturn
+
+# Function: commentsInReturn
+
+» **commentsInReturn**(): \`boolean\`
+
+Comments with a return definition
+
+**Returns**
+
+\`boolean\`
+
+Return comments
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 41`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / functionReturningAFunction
+
+# Function: functionReturningAFunction
+
+» **functionReturningAFunction**(): <T\\>(\`x\`: \`string\`) => \`boolean\`
+
+Comments for function
+
+**Returns**
+
+\`fn\`
+
+Return comments
+
+» <\`T\`\\>(\`x\`: \`string\`): \`boolean\`
+
+**Type parameters**
+
+- \`T\`
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`x\` | \`string\` |
+
+**Returns**
+
+\`boolean\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 42`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / functionReturningAnObject
+
+# Function: functionReturningAnObject
+
+» **functionReturningAnObject**(): \`Object\`
+
+Comments for function
+
+**Returns**
+
+\`Object\`
+
+Return comments
+
+| Name | Type |
+| :------ | :------ |
+| \`x\` | \`number\` |
+| \`y\` | \`number\` |
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 43`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / functionWithDefaults
+
+# Function: functionWithDefaults
+
+» **functionWithDefaults**(\`valueA?\`: \`string\`, \`valueB?\`: \`number\`, \`valueC?\`: \`number\`, \`valueD?\`: \`boolean\`, \`valueE?\`: \`boolean\`, \`valueF?\`: \`string\`): \`string\`
+
+This is a function with a parameter that has a default value.
+
+**Parameters**
+
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| \`valueA\` | \`string\` | \`'defaultValue'\` | A parameter with a default string value. |
+| \`valueB\` | \`number\` | \`100\` | A parameter with a default numeric value. |
+| \`valueC\` | \`number\` | \`Number.NaN\` | A parameter with a default NaN value. |
+| \`valueD\` | \`boolean\` | \`true\` | A parameter with a default boolean value. |
+| \`valueE\` | \`boolean\` | \`null\` | A parameter with a default null value. |
+| \`valueF\` | \`string\` | \`'<foo>'\` | - |
+
+**Returns**
+
+\`string\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 44`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / functionWithNamedParams
+
+# Function: functionWithNamedParams
+
+» **functionWithNamedParams**(\`«destructured»\`: \`Object\`): \`string\`
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`«destructured»\` | \`Object\` |
+
+**Returns**
+
+\`string\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 45`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / functionWithNamedParamsAndComments
+
+# Function: functionWithNamedParamsAndComments
+
+» **functionWithNamedParamsAndComments**(\`«destructured»?\`: \`Object\`, \`anotherParam\`: \`string\`): \`void\`
+
+FOO
+
+**Parameters**
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| \`«destructured»\` | \`Object\` | various options |
+| › \`bar?\` | \`number\` | - |
+| › \`foo?\` | \`number\` | - |
+| \`anotherParam\` | \`string\` | Another param comment |
+
+**Returns**
+
+\`void\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 46`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / functionWithNestedParams
+
+# Function: functionWithNestedParams
+
+» **functionWithNestedParams**(\`params\`: \`Object\`, \`context\`: \`any\`): \`boolean\`
+
+Some nested params.
+
+**Parameters**
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| \`params\` | \`Object\` | The parameters passed to the method. |
+| \`params.name\` | \`string\` | The name of the new group. |
+| \`params.nestedObj\` | \`Object\` | A nested object. |
+| \`params.nestedObj.name\` | \`string\` | - |
+| \`params.nestedObj.obj\` | \`Object\` | - |
+| \`params.nestedObj.obj.name\` | () => \`void\` | - |
+| \`params.nestedObj.value\` | \`number\` | - |
+| \`params.parent?\` | \`number\` | - |
+| \`context\` | \`any\` | The context of the method call. |
+
+**Returns**
+
+\`boolean\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 47`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / functionWithOptionalParam
+
+# Function: functionWithOptionalParam
+
+» **functionWithOptionalParam**(\`requiredParam\`: \`string\`, \`optionalParam?\`: \`string\`): \`void\`
+
+This is a function with a parameter that is optional.
+
+**Parameters**
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| \`requiredParam\` | \`string\` | A normal parameter. |
+| \`optionalParam?\` | \`string\` | An optional parameter. |
+
+**Returns**
+
+\`void\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 48`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / functionWithParameters
+
+# Function: functionWithParameters
+
+» **functionWithParameters**(\`paramZ\`: \`string\`, \`paramG\`: \`any\`, \`paramA\`: \`any\`): \`number\`
+
+This is a function with multiple arguments and a return value.
+
+**Parameters**
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| \`paramZ\` | \`string\` | This is a string parameter. |
+| \`paramG\` | \`any\` | This is a parameter flagged with any. |
+| \`paramA\` | \`any\` | This is a **parameter** pointing to an interface. |
+
+**Returns**
+
+\`number\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 49`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / functionWithPipesInParamsAndComments
+
+# Function: functionWithPipesInParamsAndComments
+
+» **functionWithPipesInParamsAndComments**(\`n\`: \`number\`): \`number\` \\| \`null\`
+
+**Parameters**
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| \`n\` | \`number\` | a\\|b |
+
+**Returns**
+
+\`number\` \\| \`null\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 50`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / functionWithReferenceType
+
+# Function: functionWithReferenceType
+
+» **functionWithReferenceType**(\`descriptor\`: \`TypedPropertyDescriptor\`<\`any\`\\>): \`boolean\`
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`descriptor\` | \`TypedPropertyDescriptor\`<\`any\`\\> |
+
+**Returns**
+
+\`boolean\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 51`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / functionWithRest
+
+# Function: functionWithRest
+
+» **functionWithRest**(...\`rest\`: \`string\`[]): \`string\`
+
+This is a function with rest parameter.
+
+**Parameters**
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| \`...rest\` | \`string\`[] | The rest parameter. |
+
+**Returns**
+
+\`string\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 52`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / functionWithTypeParams
+
+# Function: functionWithTypeParams
+
+» **functionWithTypeParams**<\`Item\`\\>(): \`boolean\`
+
+**Type parameters**
+
+- \`Item\` = \`string\` \\| \`boolean\`
+
+**Returns**
+
+\`boolean\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 53`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / functionWithUnionTypes
+
+# Function: functionWithUnionTypes
+
+» **functionWithUnionTypes**(\`arg\`: \`number\` \\| \`boolean\`[], ...\`args\`: (\`string\` \\| \`number\`)[]): \`any\`
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`arg\` | \`number\` \\| \`boolean\`[] |
+| \`...args\` | (\`string\` \\| \`number\`)[] |
+
+**Returns**
+
+\`any\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 54`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / multipleSignatures
+
+# Function: multipleSignatures
+
+» **multipleSignatures**(\`value\`: \`string\`): \`string\`
+
+This is the first signature of a function with multiple signatures.
+
+**Parameters**
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| \`value\` | \`string\` | The name value. |
+
+**Returns**
+
+\`string\`
+
+» **multipleSignatures**(\`value\`: \`Object\`): \`string\`
+
+This is the second signature of a function with multiple signatures.
+
+**Parameters**
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| \`value\` | \`Object\` | An object containing the name value. |
+| \`value.name\` | \`string\` | A value of the object. |
+
+**Returns**
+
+\`string\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 55`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / privateFunction
+
+# Function: privateFunction
+
+» \`Private\` **privateFunction**(): \`string\`
+
+**Returns**
+
+\`string\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 56`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / promiseReturningASymbol
+
+# Function: promiseReturningASymbol
+
+» **promiseReturningASymbol**(): \`Promise\`<[\`User\`](../types/signatures.User.md)\\>
+
+**Returns**
+
+\`Promise\`<[\`User\`](../types/signatures.User.md)\\>
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 57`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / promiseReturningAnObject
+
+# Function: promiseReturningAnObject
+
+» **promiseReturningAnObject**(): \`Promise\`<{ \`data\`: \`string\` ; \`id\`: \`string\`  }\\>
+
+**Returns**
+
+\`Promise\`<{ \`data\`: \`string\` ; \`id\`: \`string\`  }\\>
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 58`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / swtch
+
+# Function: swtch
+
+» **swtch**<\`T\`, \`R\`\\>(\`value\`: \`T\`, ...\`cases\`: [\`T\`, \`R\`][]): (\`def\`: \`R\`) => \`R\`
+
+Shorthand switch/case helper function. Cases arguments list is a tuple
+consisting of case (\`T\`) and returned result (\`R\`). Returns a function where a default value is provided.
+
+**Type parameters**
+
+- \`T\`
+- \`R\`
+
+**Parameters**
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| \`value\` | \`T\` | Value to test against |
+| \`...cases\` | [\`T\`, \`R\`][] | Tuple of case and the result if \`value\` and \`case\` is equal |
+
+**Returns**
+
+\`fn\`
+
+Function for which to provide the default value
+
+» (\`def\`: \`R\`): \`R\`
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`def\` | \`R\` |
+
+**Returns**
+
+\`R\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 59`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / variableFunction
+
+# Function: variableFunction
+
+» **variableFunction**(\`someParam\`: \`number\`): \`number\`
+
+This is a function that is assigned to a variable.
+
+**Parameters**
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| \`someParam\` | \`number\` | This is some numeric parameter. |
+
+**Returns**
+
+\`number\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 60`] = `
+"[My TypeScript API](../README.md) / [theme](../namespaces/theme.md) / functionItemA
+
+# Function: functionItemA
+
+» **functionItemA**(): \`void\`
+
+**Returns**
+
+\`void\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 61`] = `
+"[My TypeScript API](../README.md) / [theme](../namespaces/theme.md) / functionItemB
+
+# Function: functionItemB
+
+» **functionItemB**(): \`void\`
+
+**Returns**
+
+\`void\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 62`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / baz
+
+# Function: baz
+
+» **baz**(\`foos\`: \`"string"\`[]): \`string\`
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`foos\` | \`"string"\`[] |
+
+**Returns**
+
+\`string\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 63`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / functionReflectionType
+
+# Function: functionReflectionType
+
+» **functionReflectionType**<\`T\`\\>(\`arg\`: \`T\`): \`T\`
+
+**Type parameters**
+
+- \`T\`
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`arg\` | \`T\` |
+
+**Returns**
+
+\`T\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 64`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / generic
+
+# Function: generic
+
+» **generic**<\`T\`\\>(\`arg\`: \`T\`): \`T\`
+
+**Type parameters**
+
+- \`T\`
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`arg\` | \`T\` |
+
+**Returns**
+
+\`T\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 65`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / restUnionTypes
+
+# Function: restUnionTypes
+
+» **restUnionTypes**(\`arg\`: \`number\` \\| \`boolean\`[], ...\`args\`: (\`string\` \\| \`number\`)[]): \`any\`
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`arg\` | \`number\` \\| \`boolean\`[] |
+| \`...args\` | (\`string\` \\| \`number\`)[] |
+
+**Returns**
+
+\`any\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 66`] = `
+"[My TypeScript API](../README.md) / [categories](../namespaces/categories.md) / CategoryInterfaceA1
+
+# Interface: CategoryInterfaceA1
+
+## Index
+
+### Properties
+
+- [value](categories.CategoryInterfaceA1.md#value)
+
+## Properties
+
+### value
+
+ **value**: \`string\`
+
+**Defined in** 
+
+[categories.ts:36](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/categories.ts#L36)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 67`] = `
+"[My TypeScript API](../README.md) / [categories](../namespaces/categories.md) / CategoryInterfaceA2
+
+# Interface: CategoryInterfaceA2
+
+## Index
+
+### Properties
+
+- [value](categories.CategoryInterfaceA2.md#value)
+
+## Properties
+
+### value
+
+ **value**: \`string\`
+
+**Defined in** 
+
+[categories.ts:43](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/categories.ts#L43)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 68`] = `
+"[My TypeScript API](../README.md) / [categories](../namespaces/categories.md) / OtherInterfaceA
+
+# Interface: OtherInterfaceA
+
+## Index
+
+### Properties
+
+- [value](categories.OtherInterfaceA.md#value)
+
+## Properties
+
+### value
+
+ **value**: \`string\`
+
+**Defined in** 
+
+[categories.ts:71](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/categories.ts#L71)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 69`] = `
+"[My TypeScript API](../README.md) / [reflections](../namespaces/reflections.md) / CallableReflection
+
+# Interface: CallableReflection
+
+## Callable
+
+### CallableReflection
+
+» **CallableReflection**(): \`string\`
+
+**Returns**
+
+\`string\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 70`] = `
+"[My TypeScript API](../README.md) / [reflections](../namespaces/reflections.md) / IndexableReflection
+
+# Interface: IndexableReflection
+
+## Indexable
+
+▪ [index: \`number\`]: \`string\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 71`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / CallableSignature
+
+# Interface: CallableSignature
+
+## Callable
+
+### CallableSignature
+
+» **CallableSignature**(): \`string\`
+
+**Returns**
+
+\`string\`
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 72`] = `
+"[My TypeScript API](../README.md) / [sources](../namespaces/sources.md) / AnotherInterface
+
+# Interface: AnotherInterface
+
+**Hierarchy**
+
+- [\`SomeInterface\`](sources.SomeInterface.md)
+- [\`SomeClass\`](../classes/sources.SomeClass.md)
+   - **AnotherInterface**
+
+## Index
+
+### Properties
+
+- [prop](sources.AnotherInterface.md#prop)
+- [prop2](sources.AnotherInterface.md#prop2)
+
+## Properties
+
+### prop
+
+ **prop**: \`string\`
+
+**Inherited from** 
+
+[SomeClass](../classes/sources.SomeClass.md).[prop](../classes/sources.SomeClass.md#prop)
+
+**Defined in** 
+
+[sources.ts:2](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/sources.ts#L2)
+
+### prop2
+
+ **prop2**: \`number\`
+
+**Defined in** 
+
+[sources.ts:17](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/sources.ts#L17)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 73`] = `
+"[My TypeScript API](../README.md) / [sources](../namespaces/sources.md) / SomeInterface
+
+# Interface: SomeInterface
+
+**Hierarchy**
+
+- **SomeInterface**
+   - [\`AnotherInterface\`](sources.AnotherInterface.md)
+
+## Index
+
+### Properties
+
+- [prop](sources.SomeInterface.md#prop)
+
+## Properties
+
+### prop
+
+ **prop**: \`string\`
+
+**Defined in** 
+
+[sources.ts:2](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/sources.ts#L2)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 74`] = `
+"[My TypeScript API](../README.md) / [theme](../namespaces/theme.md) / InterfaceItemA
+
+# Interface: InterfaceItemA
+
+## Index
+
+### Properties
+
+- [prop](theme.InterfaceItemA.md#prop)
+
+## Properties
+
+### prop
+
+ **prop**: \`string\`
+
+**Defined in** 
+
+[theme.ts:2](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/theme.ts#L2)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 75`] = `
+"[My TypeScript API](../README.md) / [theme](../namespaces/theme.md) / InterfaceItemB
+
+# Interface: InterfaceItemB
+
+## Index
+
+### Properties
+
+- [prop](theme.InterfaceItemB.md#prop)
+
+## Properties
+
+### prop
+
+ **prop**: \`string\`
+
+**Defined in** 
+
+[theme.ts:6](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/theme.ts#L6)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 76`] = `
+"[My TypeScript API](../README.md) / categories
+
+# categories
+
+## Index
+
+### CategoryA Interfaces
+
+- [CategoryInterfaceA1](../interfaces/categories.CategoryInterfaceA1.md)
+- [CategoryInterfaceA2](../interfaces/categories.CategoryInterfaceA2.md)
+
+### Other Interfaces
+
+- [OtherInterfaceA](../interfaces/categories.OtherInterfaceA.md)
+
+### CategoryA Variables
+
+- [categoryVariableA1](../variables/categories.categoryVariableA1.md)
+- [categoryVariableA2](../variables/categories.categoryVariableA2.md)
+
+### CategoryB Variables
+
+- [categoryVariableB1](../variables/categories.categoryVariableB1.md)
+
+### Other Variables
+
+- [otherVariableA](../variables/categories.otherVariableA.md)
+- [otherVariableB](../variables/categories.otherVariableB.md)
+
+### CategoryA Functions
+
+- [categoryFunctionA1](../functions/categories.categoryFunctionA1.md)
+- [categoryFunctionA2](../functions/categories.categoryFunctionA2.md)
+- [categoryFunctionA3](../functions/categories.categoryFunctionA3.md)
+
+### CategoryB Functions
+
+- [categoryFunctionB2](../functions/categories.categoryFunctionB2.md)
+
+### Other Functions
+
+- [otherFunctionA](../functions/categories.otherFunctionA.md)
+- [otherFunctionB](../functions/categories.otherFunctionB.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 77`] = `
+"[My TypeScript API](../README.md) / classes
+
+# classes
+
+## Index
+
+### Classes
+
+- [Point](../classes/classes.Point.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 78`] = `
+"[My TypeScript API](../README.md) / comments
+
+# comments
+
+## Index
+
+### Classes
+
+- [CommentClass](../classes/comments.CommentClass.md)
+
+### Type Aliases
+
+- [literalWithBlockComments](../types/comments.literalWithBlockComments.md)
+
+### Variables
+
+- [commentWithDocLinks](../variables/comments.commentWithDocLinks.md)
+- [commentsWithFencedBlock](../variables/comments.commentsWithFencedBlock.md)
+- [commentsWithHTML](../variables/comments.commentsWithHTML.md)
+- [commentsWithIncludes](../variables/comments.commentsWithIncludes.md)
+- [commentsWithSymbolLinks](../variables/comments.commentsWithSymbolLinks.md)
+- [commentsWithTags](../variables/comments.commentsWithTags.md)
+
+### Functions
+
+- [commentsInReturn](../functions/comments.commentsInReturn.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 79`] = `
+"[My TypeScript API](../README.md) / declarations
+
+# declarations
+
+## Index
+
+### Enumerations
+
+- [EnumDeclarations](../enums/declarations.EnumDeclarations.md)
+- [EnumDeclarationsWithDefaults](../enums/declarations.EnumDeclarationsWithDefaults.md)
+
+### Type Aliases
+
+- [AnyFunctionType](../types/declarations.AnyFunctionType.md)
+
+### Variables
+
+- [\\_\\_DOUBLE\\_UNDERSCORES\\_DECLARATION\\_\\_](../variables/declarations.__DOUBLE_UNDERSCORES_DECLARATION__.md)
+- [getterAndSetter](../variables/declarations.getterAndSetter.md)
+- [indexableDeclaration](../variables/declarations.indexableDeclaration.md)
+- [objectLiteralAsConstDeclaration](../variables/declarations.objectLiteralAsConstDeclaration.md)
+- [objectLiteralDeclaration](../variables/declarations.objectLiteralDeclaration.md)
+- [stringConstWithDefaultValue](../variables/declarations.stringConstWithDefaultValue.md)
+- [stringLetWithDefaultValue](../variables/declarations.stringLetWithDefaultValue.md)
+- [typeLiteralDeclaration](../variables/declarations.typeLiteralDeclaration.md)
+- [undefinedNumberDeclaration](../variables/declarations.undefinedNumberDeclaration.md)
+
+### Functions
+
+- [functionDeclaration](../functions/declarations.functionDeclaration.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 80`] = `
+"[My TypeScript API](../README.md) / generics
+
+# generics
+
+## Index
+
+### Classes
+
+- [ClassWithTypeParams](../classes/generics.ClassWithTypeParams.md)
+
+### Type Aliases
+
+- [Generic1](../types/generics.Generic1.md)
+- [Generic2](../types/generics.Generic2.md)
+- [Generic3](../types/generics.Generic3.md)
+- [nestedGenerics](../types/generics.nestedGenerics.md)
+
+### Functions
+
+- [functionWithGenericConstraints](../functions/generics.functionWithGenericConstraints.md)
+- [functionWithTypeParam](../functions/generics.functionWithTypeParam.md)
+- [functionWithTypeParams](../functions/generics.functionWithTypeParams.md)
+- [genericsWithDefaults](../functions/generics.genericsWithDefaults.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 81`] = `
+"[My TypeScript API](../README.md) / hierarchy
+
+# hierarchy
+
+## Index
+
+### Classes
+
+- [ChildClassA](../classes/hierarchy.ChildClassA.md)
+- [ChildClassB](../classes/hierarchy.ChildClassB.md)
+- [GrandChildClassA](../classes/hierarchy.GrandChildClassA.md)
+- [ParentClass](../classes/hierarchy.ParentClass.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 82`] = `
+"[My TypeScript API](../README.md) / members
+
+# members
+
+## Index
+
+### Classes
+
+- [ClassWithAccessorMembers](../classes/members.ClassWithAccessorMembers.md)
+- [ReferenceMember](../classes/members.ReferenceMember.md)
+
+### Variables
+
+- [declarationMember](../variables/members.declarationMember.md)
+
+### Functions
+
+- [signatureMember](../functions/members.signatureMember.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 83`] = `
+"[My TypeScript API](../README.md) / reflections
+
+# reflections
+
+## Index
+
+### Enumerations
+
+- [EnumReflection](../enums/reflections.EnumReflection.md)
+
+### Classes
+
+- [ImplementedClass](../classes/reflections.ImplementedClass.md)
+- [ReflectionClass](../classes/reflections.ReflectionClass.md)
+
+### Interfaces
+
+- [CallableReflection](../interfaces/reflections.CallableReflection.md)
+- [IndexableReflection](../interfaces/reflections.IndexableReflection.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 84`] = `
+"[My TypeScript API](../README.md) / signatures
+
+# signatures
+
+## Index
+
+### Classes
+
+- [ClassWithConstructor](../classes/signatures.ClassWithConstructor.md)
+
+### Interfaces
+
+- [CallableSignature](../interfaces/signatures.CallableSignature.md)
+
+### Type Aliases
+
+- [User](../types/signatures.User.md)
+- [\\_someCallback\\_](../types/signatures._someCallback_.md)
+
+### Functions
+
+- [commentsInReturn](../functions/signatures.commentsInReturn.md)
+- [functionReturningAFunction](../functions/signatures.functionReturningAFunction.md)
+- [functionReturningAnObject](../functions/signatures.functionReturningAnObject.md)
+- [functionWithDefaults](../functions/signatures.functionWithDefaults.md)
+- [functionWithNamedParams](../functions/signatures.functionWithNamedParams.md)
+- [functionWithNamedParamsAndComments](../functions/signatures.functionWithNamedParamsAndComments.md)
+- [functionWithNestedParams](../functions/signatures.functionWithNestedParams.md)
+- [functionWithOptionalParam](../functions/signatures.functionWithOptionalParam.md)
+- [functionWithParameters](../functions/signatures.functionWithParameters.md)
+- [functionWithPipesInParamsAndComments](../functions/signatures.functionWithPipesInParamsAndComments.md)
+- [functionWithReferenceType](../functions/signatures.functionWithReferenceType.md)
+- [functionWithRest](../functions/signatures.functionWithRest.md)
+- [functionWithTypeParams](../functions/signatures.functionWithTypeParams.md)
+- [functionWithUnionTypes](../functions/signatures.functionWithUnionTypes.md)
+- [multipleSignatures](../functions/signatures.multipleSignatures.md)
+- [privateFunction](../functions/signatures.privateFunction.md)
+- [promiseReturningASymbol](../functions/signatures.promiseReturningASymbol.md)
+- [promiseReturningAnObject](../functions/signatures.promiseReturningAnObject.md)
+- [swtch](../functions/signatures.swtch.md)
+- [variableFunction](../functions/signatures.variableFunction.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 85`] = `
+"[My TypeScript API](../README.md) / sources
+
+# sources
+
+## Index
+
+### Classes
+
+- [AnotherClass](../classes/sources.AnotherClass.md)
+- [SomeClass](../classes/sources.SomeClass.md)
+
+### Interfaces
+
+- [AnotherInterface](../interfaces/sources.AnotherInterface.md)
+- [SomeInterface](../interfaces/sources.SomeInterface.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 86`] = `
+"[My TypeScript API](../README.md) / theme
+
+# theme
+
+## Index
+
+### Namespaces
+
+- [namespaceA](theme.namespaceA.md)
+- [namespaceB](theme.namespaceB.md)
+
+### Enumerations
+
+- [enumItemA](../enums/theme.enumItemA.md)
+- [enumItemB](../enums/theme.enumItemB.md)
+
+### Classes
+
+- [ClassItemA](../classes/theme.ClassItemA.md)
+- [ClassItemB](../classes/theme.ClassItemB.md)
+
+### Interfaces
+
+- [InterfaceItemA](../interfaces/theme.InterfaceItemA.md)
+- [InterfaceItemB](../interfaces/theme.InterfaceItemB.md)
+
+### Variables
+
+- [declarationItemA](../variables/theme.declarationItemA.md)
+- [declarationItemB](../variables/theme.declarationItemB.md)
+
+### Functions
+
+- [functionItemA](../functions/theme.functionItemA.md)
+- [functionItemB](../functions/theme.functionItemB.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 87`] = `
+"[My TypeScript API](../README.md) / [theme](theme.md) / namespaceA
+
+# namespaceA
+
+## Index
+
+### Classes
+
+- [SomeNestedClass](../classes/theme.namespaceA.SomeNestedClass.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 88`] = `
+"[My TypeScript API](../README.md) / [theme](theme.md) / namespaceB
+
+# namespaceB
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 89`] = `
+"[My TypeScript API](../README.md) / toc
+
+# toc
+
+## Index
+
+### Classes
+
+- [SomeClass](../classes/toc.SomeClass.md)
+
+### Type Aliases
+
+- [Answer](../types/toc.Answer.md)
+- [answer](../types/toc.answer-1.md)
+
+### Variables
+
+- [\\_answer](../variables/toc._answer.md)
+- [answer](../variables/toc.answer-2.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 90`] = `
+"[My TypeScript API](../README.md) / types
+
+# types
+
+## Index
+
+### Classes
+
+- [IntersectionClassA](../classes/types.IntersectionClassA.md)
+- [IntersectionClassB](../classes/types.IntersectionClassB.md)
+
+### Type Aliases
+
+- [Bar](../types/types.Bar.md)
+- [ConditionalType](../types/types.ConditionalType.md)
+- [PartialMappedType](../types/types.PartialMappedType.md)
+- [ReadonlyMapedType](../types/types.ReadonlyMapedType.md)
+- [intersectionType](../types/types.intersectionType.md)
+- [objectLiteralUnionType](../types/types.objectLiteralUnionType.md)
+- [unionType](../types/types.unionType.md)
+- [unionTypeWithSymbols](../types/types.unionTypeWithSymbols.md)
+- [unionTypeWithSymbolsDeclarations](../types/types.unionTypeWithSymbolsDeclarations.md)
+
+### Variables
+
+- [arrayType](../variables/types.arrayType.md)
+- [barBigInt](../variables/types.barBigInt.md)
+- [externalReference](../variables/types.externalReference.md)
+- [externalReferenceInsideTypeParams](../variables/types.externalReferenceInsideTypeParams.md)
+- [fooBigInt](../variables/types.fooBigInt.md)
+- [htmlElement](../variables/types.htmlElement.md)
+- [literalType](../variables/types.literalType.md)
+- [objectLiteralType](../variables/types.objectLiteralType.md)
+- [stringLiteralType](../variables/types.stringLiteralType.md)
+- [stringType](../variables/types.stringType.md)
+- [tupleType](../variables/types.tupleType.md)
+- [typeOperatorType](../variables/types.typeOperatorType.md)
+
+### Functions
+
+- [baz](../functions/types.baz.md)
+- [functionReflectionType](../functions/types.functionReflectionType.md)
+- [generic](../functions/types.generic.md)
+- [restUnionTypes](../functions/types.restUnionTypes.md)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 91`] = `
+"[My TypeScript API](../README.md) / [comments](../namespaces/comments.md) / literalWithBlockComments
+
+# Type alias: literalWithBlockComments
+
+ **literalWithBlockComments**: \`Object\`
+
+Some comments
+
+**Type declaration**
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| \`prop\` | \`string\` | Comment for prop |
+
+**Defined in** 
+
+[comments.ts:105](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/comments.ts#L105)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 92`] = `
+"[My TypeScript API](../README.md) / [declarations](../namespaces/declarations.md) / AnyFunctionType
+
+# Type alias: AnyFunctionType<A\\>
+
+ **AnyFunctionType**<\`A\`\\>: (...\`input\`: \`any\`[]) => [\`A\`](declarations.AnyFunctionType.md#a)
+
+**Type parameters**
+
+- \`A\` = \`any\`
+
+**Type declaration**
+
+» (...\`input\`: \`any\`[]): [\`A\`](declarations.AnyFunctionType.md#a)
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`...input\` | \`any\`[] |
+
+**Returns**
+
+[\`A\`](declarations.AnyFunctionType.md#a)
+
+**Defined in** 
+
+[declarations.ts:84](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L84)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 93`] = `
+"[My TypeScript API](../README.md) / [generics](../namespaces/generics.md) / Generic1
+
+# Type alias: Generic1<T\\>
+
+ **Generic1**<\`T\`\\>: [\`Generic2\`](generics.Generic2.md)<[\`Generic3\`](generics.Generic3.md)<[\`T\`](generics.Generic1.md#t)\\>\\>
+
+**Type parameters**
+
+- \`T\`
+
+**Defined in** 
+
+[generics.ts:35](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/generics.ts#L35)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 94`] = `
+"[My TypeScript API](../README.md) / [generics](../namespaces/generics.md) / Generic2
+
+# Type alias: Generic2<T\\>
+
+ **Generic2**<\`T\`\\>: [\`T\`](generics.Generic2.md#t)
+
+**Type parameters**
+
+- \`T\`
+
+**Defined in** 
+
+[generics.ts:36](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/generics.ts#L36)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 95`] = `
+"[My TypeScript API](../README.md) / [generics](../namespaces/generics.md) / Generic3
+
+# Type alias: Generic3<T\\>
+
+ **Generic3**<\`T\`\\>: [\`T\`](generics.Generic3.md#t)
+
+**Type parameters**
+
+- \`T\`
+
+**Defined in** 
+
+[generics.ts:37](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/generics.ts#L37)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 96`] = `
+"[My TypeScript API](../README.md) / [generics](../namespaces/generics.md) / nestedGenerics
+
+# Type alias: nestedGenerics
+
+ **nestedGenerics**: [\`Generic1\`](generics.Generic1.md)<[\`Generic2\`](generics.Generic2.md)<[\`Generic3\`](generics.Generic3.md)<\`string\`\\>\\>\\>
+
+**Defined in** 
+
+[generics.ts:39](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/generics.ts#L39)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 97`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / User
+
+# Type alias: User
+
+ **User**: \`Object\`
+
+**Type declaration**
+
+| Name | Type |
+| :------ | :------ |
+| \`data\` | \`string\` |
+| \`id\` | \`string\` |
+
+**Defined in** 
+
+[signatures.ts:216](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/signatures.ts#L216)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 98`] = `
+"[My TypeScript API](../README.md) / [signatures](../namespaces/signatures.md) / _someCallback_
+
+# Type alias: \\_someCallback\\_
+
+ **\\_someCallback\\_**: (\`name\`: \`string\`, \`value\`: \`unknown\`) => \`void\`
+
+**Type declaration**
+
+» (\`name\`: \`string\`, \`value\`: \`unknown\`): \`void\`
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`name\` | \`string\` |
+| \`value\` | \`unknown\` |
+
+**Returns**
+
+\`void\`
+
+**Defined in** 
+
+[signatures.ts:157](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/signatures.ts#L157)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 99`] = `
+"[My TypeScript API](../README.md) / [toc](../namespaces/toc.md) / Answer
+
+# Type alias: Answer
+
+ **Answer**: \`"yes"\` \\| \`"no"\`
+
+**Defined in** 
+
+[toc.ts:10](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/toc.ts#L10)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 100`] = `
+"[My TypeScript API](../README.md) / [toc](../namespaces/toc.md) / answer
+
+# Type alias: answer
+
+ **answer**: \`"yes"\` \\| \`"no"\`
+
+**Defined in** 
+
+[toc.ts:6](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/toc.ts#L6)
+
+[toc.ts:8](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/toc.ts#L8)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 101`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / Bar
+
+# Type alias: Bar<T, R\\>
+
+ **Bar**<\`T\`, \`R\`\\>: (\`foos\`: [\`ConditionalType\`](types.ConditionalType.md)<[\`T\`](types.Bar.md#t)\\>[]) => [\`R\`](types.Bar.md#r)
+
+**Type parameters**
+
+- \`T\`
+- \`R\`
+
+**Type declaration**
+
+» (\`foos\`: [\`ConditionalType\`](types.ConditionalType.md)<[\`T\`](types.Bar.md#t)\\>[]): [\`R\`](types.Bar.md#r)
+
+**Parameters**
+
+| Name | Type |
+| :------ | :------ |
+| \`foos\` | [\`ConditionalType\`](types.ConditionalType.md)<[\`T\`](types.Bar.md#t)\\>[] |
+
+**Returns**
+
+[\`R\`](types.Bar.md#r)
+
+**Defined in** 
+
+[types.ts:115](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L115)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 102`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / ConditionalType
+
+# Type alias: ConditionalType<T\\>
+
+ **ConditionalType**<\`T\`\\>: [\`T\`](types.ConditionalType.md#t) extends \`string\` ? \`"string"\` : [\`T\`](types.ConditionalType.md#t) extends \`number\` ? \`"number"\` : [\`T\`](types.ConditionalType.md#t) extends \`boolean\` ? \`"boolean"\` : [\`T\`](types.ConditionalType.md#t) extends \`undefined\` ? \`"undefined"\` : \`"object"\`
+
+**Type parameters**
+
+- \`T\`
+
+**Defined in** 
+
+[types.ts:105](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L105)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 103`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / PartialMappedType
+
+# Type alias: PartialMappedType<T\\>
+
+ **PartialMappedType**<\`T\`\\>: \`{ [P in keyof T]?: T[P] }\`
+
+**Type parameters**
+
+- \`T\`
+
+**Defined in** 
+
+[types.ts:97](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L97)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 104`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / ReadonlyMapedType
+
+# Type alias: ReadonlyMapedType<T\\>
+
+ **ReadonlyMapedType**<\`T\`\\>: \`{ readonly [P in keyof T]: T[P] }\`
+
+**Type parameters**
+
+- \`T\`
+
+**Defined in** 
+
+[types.ts:101](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L101)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 105`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / intersectionType
+
+# Type alias: intersectionType
+
+ **intersectionType**: [\`IntersectionClassA\`](../classes/types.IntersectionClassA.md) & [\`IntersectionClassB\`](../classes/types.IntersectionClassB.md)
+
+**Defined in** 
+
+[types.ts:76](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L76)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 106`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / objectLiteralUnionType
+
+# Type alias: objectLiteralUnionType
+
+ **objectLiteralUnionType**: \`string\` \\| { \`z\`: \`string\`  }
+
+**Defined in** 
+
+[types.ts:95](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L95)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 107`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / unionType
+
+# Type alias: unionType
+
+ **unionType**: \`"ease-in"\` \\| \`"ease-out"\`
+
+**Defined in** 
+
+[types.ts:17](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L17)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 108`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / unionTypeWithSymbols
+
+# Type alias: unionTypeWithSymbols
+
+ **unionTypeWithSymbols**: \`" "\` \\| \`"string"\` \\| \`"strong|with|pipes"\` \\| \`"type\`with\`backticks"\` \\| \`"*"\`
+
+**Defined in** 
+
+[types.ts:19](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L19)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 109`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / unionTypeWithSymbolsDeclarations
+
+# Type alias: unionTypeWithSymbolsDeclarations
+
+ **unionTypeWithSymbolsDeclarations**: \`Object\`
+
+**Type declaration**
+
+| Name | Type |
+| :------ | :------ |
+| \`bar\` | \`" "\` \\| \`"string"\` \\| \`"strong\\|with\\|pipes"\` \\| \`"type\`with\`backticks"\` \\| \`"*"\` |
+
+**Defined in** 
+
+[types.ts:26](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L26)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 110`] = `
+"[My TypeScript API](../README.md) / [categories](../namespaces/categories.md) / categoryVariableA1
+
+# Variable: categoryVariableA1
+
+\`Const\` **categoryVariableA1**: \`true\`
+
+**Defined in** 
+
+[categories.ts:4](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/categories.ts#L4)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 111`] = `
+"[My TypeScript API](../README.md) / [categories](../namespaces/categories.md) / categoryVariableA2
+
+# Variable: categoryVariableA2
+
+\`Const\` **categoryVariableA2**: \`true\`
+
+**Defined in** 
+
+[categories.ts:9](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/categories.ts#L9)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 112`] = `
+"[My TypeScript API](../README.md) / [categories](../namespaces/categories.md) / categoryVariableB1
+
+# Variable: categoryVariableB1
+
+\`Const\` **categoryVariableB1**: \`true\`
+
+**Defined in** 
+
+[categories.ts:49](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/categories.ts#L49)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 113`] = `
+"[My TypeScript API](../README.md) / [categories](../namespaces/categories.md) / otherVariableA
+
+# Variable: otherVariableA
+
+\`Const\` **otherVariableA**: \`true\`
+
+**Defined in** 
+
+[categories.ts:58](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/categories.ts#L58)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 114`] = `
+"[My TypeScript API](../README.md) / [categories](../namespaces/categories.md) / otherVariableB
+
+# Variable: otherVariableB
+
+\`Const\` **otherVariableB**: \`true\`
+
+**Defined in** 
+
+[categories.ts:64](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/categories.ts#L64)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 115`] = `
+"[My TypeScript API](../README.md) / [comments](../namespaces/comments.md) / commentWithDocLinks
+
+# Variable: commentWithDocLinks
+
+\`Const\` **commentWithDocLinks**: \`true\`
+
+See [\`CommentClass\`](../classes/comments.CommentClass.md) and CommentClass's [comment](../classes/comments.CommentClass.md#comment) property.
+Also, check out [https://www.google.com|Google](https://www.google.com|Google) and
+[GitHub](https://github.com).
+
+Taken from [JsDoc](http://usejsdoc.org/tags-inline-link.html).
+
+**Defined in** 
+
+[comments.ts:8](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/comments.ts#L8)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 116`] = `
+"[My TypeScript API](../README.md) / [comments](../namespaces/comments.md) / commentsWithFencedBlock
+
+# Variable: commentsWithFencedBlock
+
+\`Const\` **commentsWithFencedBlock**: \`true\`
+
+Some comments with fence blocks
+
+\`\`\`typescript
+someFunction()
+\`\`\`
+
+\`\`\`js
+anotherFunction()
+\`\`\`
+
+**Defined in** 
+
+[comments.ts:70](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/comments.ts#L70)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 117`] = `
+"[My TypeScript API](../README.md) / [comments](../namespaces/comments.md) / commentsWithHTML
+
+# Variable: commentsWithHTML
+
+\`Const\` **commentsWithHTML**: \`true\`
+
+<p>
+You can write <strong>HTML</strong> tags directly in comments
+</p>
+<ul>
+<li>List item</li>
+</ul>
+
+**Defined in** 
+
+[comments.ts:28](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/comments.ts#L28)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 118`] = `
+"[My TypeScript API](../README.md) / [comments](../namespaces/comments.md) / commentsWithIncludes
+
+# Variable: commentsWithIncludes
+
+\`Const\` **commentsWithIncludes**: \`true\`
+
+This is an example of include
+
+[[include:class-example.md]]
+
+This is an example of handlebars include
+
+[[include:class-example.hbs]]
+
+**Defined in** 
+
+[comments.ts:39](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/comments.ts#L39)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 119`] = `
+"[My TypeScript API](../README.md) / [comments](../namespaces/comments.md) / commentsWithSymbolLinks
+
+# Variable: commentsWithSymbolLinks
+
+\`Const\` **commentsWithSymbolLinks**: \`true\`
+
+Additionally you can link to other classes, members or functions using double square brackets.
+
+- Link to an external reflection: [CommentClass](../classes/comments.CommentClass.md)
+- Link to an internal reflection: [commentsInReturn](../functions/comments.commentsInReturn.md)
+- Link to an undefined reflection: VOID
+
+**Defined in** 
+
+[comments.ts:18](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/comments.ts#L18)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 120`] = `
+"[My TypeScript API](../README.md) / [comments](../namespaces/comments.md) / commentsWithTags
+
+# Variable: commentsWithTags
+
+\`Const\` **commentsWithTags**: \`true\`
+
+**\`Description\`**
+
+Tag description on new line
+
+- Tag description on another line
+
+**\`Deprecated\`**
+
+Another tag description
+
+Gets the application version.
+
+**\`Example\`**
+
+\`\`\`typescript
+import { getVersion } from '@tauri-apps/api/app';
+const appVersion = await getVersion();
+\`\`\`
+
+**Defined in** 
+
+[comments.ts:57](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/comments.ts#L57)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 121`] = `
+"[My TypeScript API](../README.md) / [declarations](../namespaces/declarations.md) / __DOUBLE_UNDERSCORES_DECLARATION__
+
+# Variable: \\_\\_DOUBLE\\_UNDERSCORES\\_DECLARATION\\_\\_
+
+\`Const\` **\\_\\_DOUBLE\\_UNDERSCORES\\_DECLARATION\\_\\_**: typeof [\`__DOUBLE_UNDERSCORES_DECLARATION__\`](declarations.__DOUBLE_UNDERSCORES_DECLARATION__.md)
+
+**Defined in** 
+
+[declarations.ts:82](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L82)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 122`] = `
+"[My TypeScript API](../README.md) / [declarations](../namespaces/declarations.md) / getterAndSetter
+
+# Variable: getterAndSetter
+
+ **getterAndSetter**: \`Object\`
+
+**Type declaration**
+
+| Name | Type |
+| :------ | :------ |
+| \`get getMe()\` | \`Promise\`<\`string\`\\> |
+| \`set setMe(x:string)\` | \`void\` |
+
+**Defined in** 
+
+[declarations.ts:100](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L100)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 123`] = `
+"[My TypeScript API](../README.md) / [declarations](../namespaces/declarations.md) / indexableDeclaration
+
+# Variable: indexableDeclaration
+
+ **indexableDeclaration**: \`Object\`
+
+▪ [index: \`number\`]: \`string\`
+
+**Type declaration**
+
+| Name | Type |
+| :------ | :------ |
+| \`arg1\` | \`string\` |
+
+**Defined in** 
+
+[declarations.ts:65](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L65)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 124`] = `
+"[My TypeScript API](../README.md) / [declarations](../namespaces/declarations.md) / objectLiteralAsConstDeclaration
+
+# Variable: objectLiteralAsConstDeclaration
+
+\`Const\` **objectLiteralAsConstDeclaration**: \`Object\`
+
+Comments
+
+**\`Param\`**
+
+Comment for object.
+
+**\`Param\`**
+
+Comment for Prop1.
+
+**\`Param\`**
+
+Comment for Prop2.
+
+**Type declaration**
+
+| Name | Type |
+| :------ | :------ |
+| \`Prop1\` | \`"Prop1"\` |
+| \`Prop2\` | \`"Prop2"\` |
+| \`Prop3\` | \`"Prop3"\` |
+
+**Defined in** 
+
+[declarations.ts:76](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L76)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 125`] = `
+"[My TypeScript API](../README.md) / [declarations](../namespaces/declarations.md) / objectLiteralDeclaration
+
+# Variable: objectLiteralDeclaration
+
+\`Const\` **objectLiteralDeclaration**: \`Object\`
+
+**\`Param\`**
+
+description for valueX
+
+**\`Param\`**
+
+description for valueZ
+
+**\`Param\`**
+
+description for valueY
+
+**Type declaration**
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| \`valueA\` | \`number\` | Comment for valueA |
+| \`valueB\` | \`boolean\` | - |
+| \`valueC\` | {} | - |
+| \`valueX\` | { \`valueA\`: \`number\`[] ; \`valueZ\`: \`string\` = 'foo' } | Comment for valueX |
+| \`valueX.valueA\` | \`number\`[] | - |
+| \`valueX.valueZ\` | \`string\` | - |
+| \`valueY\` | () => \`string\` | Comment for value Y |
+| \`valueZ\` | \`string\` | Comment for valueZ |
+
+**Defined in** 
+
+[declarations.ts:12](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L12)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 126`] = `
+"[My TypeScript API](../README.md) / [declarations](../namespaces/declarations.md) / stringConstWithDefaultValue
+
+# Variable: stringConstWithDefaultValue
+
+\`Const\` **stringConstWithDefaultValue**: \`"hello"\`
+
+**Defined in** 
+
+[declarations.ts:1](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L1)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 127`] = `
+"[My TypeScript API](../README.md) / [declarations](../namespaces/declarations.md) / stringLetWithDefaultValue
+
+# Variable: stringLetWithDefaultValue
+
+ **stringLetWithDefaultValue**: \`string\` = \`'hello'\`
+
+**Defined in** 
+
+[declarations.ts:2](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L2)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 128`] = `
+"[My TypeScript API](../README.md) / [declarations](../namespaces/declarations.md) / typeLiteralDeclaration
+
+# Variable: typeLiteralDeclaration
+
+ **typeLiteralDeclaration**: \`Object\`
+
+**Type declaration**
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| \`valueA?\` | \`number\` | Comments for valueA |
+| \`valueB?\` | \`boolean\` | - |
+| \`valueC\` | { \`[dataId: string]\`: \`"ok"\` \\| \`"ko"\`;  } | - |
+| \`valueX\` | { \`valueA\`: \`number\`[] ; \`valueY\`: (\`z\`: \`string\`) => { \`a\`: \`string\` ; \`b\`: \`string\`  } ; \`valueZ\`: \`string\`  } | Comment for valueX |
+| \`valueX.valueA\` | \`number\`[] | - |
+| \`valueX.valueY\` | (\`z\`: \`string\`) => { \`a\`: \`string\` ; \`b\`: \`string\`  } | - |
+| \`valueX.valueZ\` | \`string\` | Nested comment for valueZ |
+| \`valueY\` | () => \`string\` | - |
+| \`valueZ\` | \`string\` | Comment for valueZ |
+
+**Defined in** 
+
+[declarations.ts:38](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L38)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 129`] = `
+"[My TypeScript API](../README.md) / [declarations](../namespaces/declarations.md) / undefinedNumberDeclaration
+
+# Variable: undefinedNumberDeclaration
+
+ **undefinedNumberDeclaration**: \`number\`
+
+**Defined in** 
+
+[declarations.ts:5](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/declarations.ts#L5)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 130`] = `
+"[My TypeScript API](../README.md) / [members](../namespaces/members.md) / declarationMember
+
+# Variable: declarationMember
+
+ **declarationMember**: \`string\`
+
+**Defined in** 
+
+[members.ts:1](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/members.ts#L1)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 131`] = `
+"[My TypeScript API](../README.md) / [theme](../namespaces/theme.md) / declarationItemA
+
+# Variable: declarationItemA
+
+ **declarationItemA**: \`string\`
+
+**Defined in** 
+
+[theme.ts:9](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/theme.ts#L9)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 132`] = `
+"[My TypeScript API](../README.md) / [theme](../namespaces/theme.md) / declarationItemB
+
+# Variable: declarationItemB
+
+ **declarationItemB**: \`string\`
+
+**Defined in** 
+
+[theme.ts:10](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/theme.ts#L10)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 133`] = `
+"[My TypeScript API](../README.md) / [toc](../namespaces/toc.md) / _answer
+
+# Variable: \\_answer
+
+\`Const\` **\\_answer**: \`Object\`
+
+**Type declaration**
+
+| Name | Type |
+| :------ | :------ |
+| \`Answer\` | \`string\` |
+| \`answer\` | \`string\` |
+
+**Defined in** 
+
+[toc.ts:1](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/toc.ts#L1)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 134`] = `
+"[My TypeScript API](../README.md) / [toc](../namespaces/toc.md) / answer
+
+# Variable: answer
+
+ **answer**: \`"yes"\`
+
+**Defined in** 
+
+[toc.ts:6](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/toc.ts#L6)
+
+[toc.ts:8](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/toc.ts#L8)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 135`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / arrayType
+
+# Variable: arrayType
+
+\`Const\` **arrayType**: \`string\`[]
+
+**Defined in** 
+
+[types.ts:78](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L78)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 136`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / barBigInt
+
+# Variable: barBigInt
+
+\`Const\` **barBigInt**: \`100n\`
+
+**Defined in** 
+
+[types.ts:119](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L119)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 137`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / externalReference
+
+# Variable: externalReference
+
+ **externalReference**: \`HTMLElement\`
+
+**Defined in** 
+
+[types.ts:6](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L6)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 138`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / externalReferenceInsideTypeParams
+
+# Variable: externalReferenceInsideTypeParams
+
+\`Const\` **externalReferenceInsideTypeParams**: [\`ClassWithTypeParams\`](../classes/generics.ClassWithTypeParams.md)<\`HTMLElement\`, \`Error\`\\>
+
+**Defined in** 
+
+[types.ts:8](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L8)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 139`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / fooBigInt
+
+# Variable: fooBigInt
+
+\`Const\` **fooBigInt**: \`bigint\`
+
+**Defined in** 
+
+[types.ts:118](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L118)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 140`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / htmlElement
+
+# Variable: htmlElement
+
+ **htmlElement**: \`HTMLElement\`
+
+**Defined in** 
+
+[types.ts:4](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L4)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 141`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / literalType
+
+# Variable: literalType
+
+ **literalType**: \`Object\`
+
+**Type declaration**
+
+| Name | Type |
+| :------ | :------ |
+| \`valueA?\` | \`number\` |
+| \`valueB?\` | \`boolean\` |
+| \`valueX\` | { \`valueA\`: \`number\`[] ; \`valueY\`: (\`z\`: \`string\`) => { \`a\`: \`string\` ; \`b\`: \`string\`  } ; \`valueZ\`: \`string\`  } |
+| \`valueX.valueA\` | \`number\`[] |
+| \`valueX.valueY\` | (\`z\`: \`string\`) => { \`a\`: \`string\` ; \`b\`: \`string\`  } |
+| \`valueX.valueZ\` | \`string\` |
+| \`valueY\` | () => \`string\` |
+| \`valueZ\` | \`string\` |
+
+**Defined in** 
+
+[types.ts:30](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L30)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 142`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / objectLiteralType
+
+# Variable: objectLiteralType
+
+\`Const\` **objectLiteralType**: \`Object\`
+
+**Type declaration**
+
+| Name | Type |
+| :------ | :------ |
+| \`<\` | \`string\` |
+| \`<foo>\` | \`string\` |
+| \\n | \`string\` |
+| \`_\` | \`string\` |
+| \`prop_with_underscore\` | \`string\` |
+| prop\\\`with\\\`backticks | \`string\` |
+| prop\\|with\\|pipes | \`string\` |
+| \`valueA\` | \`number\` |
+| \`valueB\` | \`boolean\` |
+| \`valueX\` | { \`valueA\`: \`number\`[] ; \`valueY\`: (\`z\`: \`string\`) => { \`a\`: \`string\` = 'test'; \`b\`: \`string\` = z } ; \`valueZ\`: \`string\` = 'foo' } |
+| \`valueX.valueA\` | \`number\`[] |
+| \`valueX.valueY\` | (\`z\`: \`string\`) => { \`a\`: \`string\` = 'test'; \`b\`: \`string\` = z } |
+| \`valueX.valueZ\` | \`string\` |
+| \`valueY\` | (\`cbParam\`: [\`_someCallback_\`](../types/signatures._someCallback_.md), \`unionParam\`: \`"a"\` \\| \`"b"\`, \`_undercoreParam_\`: \`string\`) => \`string\` |
+| \`valueZ\` | \`string\` |
+| \\| | \`string\` |
+| \`~\` | \`string\` |
+
+**Defined in** 
+
+[types.ts:42](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L42)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 143`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / stringLiteralType
+
+# Variable: stringLiteralType
+
+\`Const\` **stringLiteralType**: \`"blue"\`
+
+**Defined in** 
+
+[types.ts:15](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L15)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 144`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / stringType
+
+# Variable: stringType
+
+ **stringType**: \`string\`
+
+**Defined in** 
+
+[types.ts:13](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L13)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 145`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / tupleType
+
+# Variable: tupleType
+
+ **tupleType**: [\`string\`, \`number\`]
+
+**Defined in** 
+
+[types.ts:71](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L71)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 146`] = `
+"[My TypeScript API](../README.md) / [types](../namespaces/types.md) / typeOperatorType
+
+# Variable: typeOperatorType
+
+\`Const\` **typeOperatorType**: unique \`symbol\`
+
+**Defined in** 
+
+[types.ts:93](https://github.com/tauri-apps/typedoc-plugin-markdown/blob/7a920bf/stubs/src/types.ts#L93)
+"
+`;
+
+exports[`Markdown Output Files Structure should generate same files 147`] = `
+[
+  "../../docs/md/README.md",
+  "../../docs/md/classes/classes.Point.md",
+  "../../docs/md/classes/comments.CommentClass.md",
+  "../../docs/md/classes/generics.ClassWithTypeParams.md",
+  "../../docs/md/classes/hierarchy.ChildClassA.md",
+  "../../docs/md/classes/hierarchy.ChildClassB.md",
+  "../../docs/md/classes/hierarchy.GrandChildClassA.md",
+  "../../docs/md/classes/hierarchy.ParentClass.md",
+  "../../docs/md/classes/members.ClassWithAccessorMembers.md",
+  "../../docs/md/classes/members.ReferenceMember.md",
+  "../../docs/md/classes/reflections.ImplementedClass.md",
+  "../../docs/md/classes/reflections.ReflectionClass.md",
+  "../../docs/md/classes/signatures.ClassWithConstructor.md",
+  "../../docs/md/classes/sources.AnotherClass.md",
+  "../../docs/md/classes/sources.SomeClass.md",
+  "../../docs/md/classes/theme.ClassItemA.md",
+  "../../docs/md/classes/theme.ClassItemB.md",
+  "../../docs/md/classes/theme.namespaceA.SomeNestedClass.md",
+  "../../docs/md/classes/toc.SomeClass.md",
+  "../../docs/md/classes/types.IntersectionClassA.md",
+  "../../docs/md/classes/types.IntersectionClassB.md",
+  "../../docs/md/enums/declarations.EnumDeclarations.md",
+  "../../docs/md/enums/declarations.EnumDeclarationsWithDefaults.md",
+  "../../docs/md/enums/reflections.EnumReflection.md",
+  "../../docs/md/enums/theme.enumItemA.md",
+  "../../docs/md/enums/theme.enumItemB.md",
+  "../../docs/md/functions/categories.categoryFunctionA1.md",
+  "../../docs/md/functions/categories.categoryFunctionA2.md",
+  "../../docs/md/functions/categories.categoryFunctionA3.md",
+  "../../docs/md/functions/categories.categoryFunctionB2.md",
+  "../../docs/md/functions/categories.otherFunctionA.md",
+  "../../docs/md/functions/categories.otherFunctionB.md",
+  "../../docs/md/functions/comments.commentsInReturn.md",
+  "../../docs/md/functions/declarations.functionDeclaration.md",
+  "../../docs/md/functions/generics.functionWithGenericConstraints.md",
+  "../../docs/md/functions/generics.functionWithTypeParam.md",
+  "../../docs/md/functions/generics.functionWithTypeParams.md",
+  "../../docs/md/functions/generics.genericsWithDefaults.md",
+  "../../docs/md/functions/members.signatureMember.md",
+  "../../docs/md/functions/signatures.commentsInReturn.md",
+  "../../docs/md/functions/signatures.functionReturningAFunction.md",
+  "../../docs/md/functions/signatures.functionReturningAnObject.md",
+  "../../docs/md/functions/signatures.functionWithDefaults.md",
+  "../../docs/md/functions/signatures.functionWithNamedParams.md",
+  "../../docs/md/functions/signatures.functionWithNamedParamsAndComments.md",
+  "../../docs/md/functions/signatures.functionWithNestedParams.md",
+  "../../docs/md/functions/signatures.functionWithOptionalParam.md",
+  "../../docs/md/functions/signatures.functionWithParameters.md",
+  "../../docs/md/functions/signatures.functionWithPipesInParamsAndComments.md",
+  "../../docs/md/functions/signatures.functionWithReferenceType.md",
+  "../../docs/md/functions/signatures.functionWithRest.md",
+  "../../docs/md/functions/signatures.functionWithTypeParams.md",
+  "../../docs/md/functions/signatures.functionWithUnionTypes.md",
+  "../../docs/md/functions/signatures.multipleSignatures.md",
+  "../../docs/md/functions/signatures.privateFunction.md",
+  "../../docs/md/functions/signatures.promiseReturningASymbol.md",
+  "../../docs/md/functions/signatures.promiseReturningAnObject.md",
+  "../../docs/md/functions/signatures.swtch.md",
+  "../../docs/md/functions/signatures.variableFunction.md",
+  "../../docs/md/functions/theme.functionItemA.md",
+  "../../docs/md/functions/theme.functionItemB.md",
+  "../../docs/md/functions/types.baz.md",
+  "../../docs/md/functions/types.functionReflectionType.md",
+  "../../docs/md/functions/types.generic.md",
+  "../../docs/md/functions/types.restUnionTypes.md",
+  "../../docs/md/interfaces/categories.CategoryInterfaceA1.md",
+  "../../docs/md/interfaces/categories.CategoryInterfaceA2.md",
+  "../../docs/md/interfaces/categories.OtherInterfaceA.md",
+  "../../docs/md/interfaces/reflections.CallableReflection.md",
+  "../../docs/md/interfaces/reflections.IndexableReflection.md",
+  "../../docs/md/interfaces/signatures.CallableSignature.md",
+  "../../docs/md/interfaces/sources.AnotherInterface.md",
+  "../../docs/md/interfaces/sources.SomeInterface.md",
+  "../../docs/md/interfaces/theme.InterfaceItemA.md",
+  "../../docs/md/interfaces/theme.InterfaceItemB.md",
+  "../../docs/md/media/logo.png",
+  "../../docs/md/namespaces/categories.md",
+  "../../docs/md/namespaces/classes.md",
+  "../../docs/md/namespaces/comments.md",
+  "../../docs/md/namespaces/declarations.md",
+  "../../docs/md/namespaces/generics.md",
+  "../../docs/md/namespaces/hierarchy.md",
+  "../../docs/md/namespaces/members.md",
+  "../../docs/md/namespaces/reflections.md",
+  "../../docs/md/namespaces/signatures.md",
+  "../../docs/md/namespaces/sources.md",
+  "../../docs/md/namespaces/theme.md",
+  "../../docs/md/namespaces/theme.namespaceA.md",
+  "../../docs/md/namespaces/theme.namespaceB.md",
+  "../../docs/md/namespaces/toc.md",
+  "../../docs/md/namespaces/types.md",
+  "../../docs/md/types/comments.literalWithBlockComments.md",
+  "../../docs/md/types/declarations.AnyFunctionType.md",
+  "../../docs/md/types/generics.Generic1.md",
+  "../../docs/md/types/generics.Generic2.md",
+  "../../docs/md/types/generics.Generic3.md",
+  "../../docs/md/types/generics.nestedGenerics.md",
+  "../../docs/md/types/signatures.User.md",
+  "../../docs/md/types/signatures._someCallback_.md",
+  "../../docs/md/types/toc.Answer.md",
+  "../../docs/md/types/toc.answer-1.md",
+  "../../docs/md/types/types.Bar.md",
+  "../../docs/md/types/types.ConditionalType.md",
+  "../../docs/md/types/types.PartialMappedType.md",
+  "../../docs/md/types/types.ReadonlyMapedType.md",
+  "../../docs/md/types/types.intersectionType.md",
+  "../../docs/md/types/types.objectLiteralUnionType.md",
+  "../../docs/md/types/types.unionType.md",
+  "../../docs/md/types/types.unionTypeWithSymbols.md",
+  "../../docs/md/types/types.unionTypeWithSymbolsDeclarations.md",
+  "../../docs/md/variables/categories.categoryVariableA1.md",
+  "../../docs/md/variables/categories.categoryVariableA2.md",
+  "../../docs/md/variables/categories.categoryVariableB1.md",
+  "../../docs/md/variables/categories.otherVariableA.md",
+  "../../docs/md/variables/categories.otherVariableB.md",
+  "../../docs/md/variables/comments.commentWithDocLinks.md",
+  "../../docs/md/variables/comments.commentsWithFencedBlock.md",
+  "../../docs/md/variables/comments.commentsWithHTML.md",
+  "../../docs/md/variables/comments.commentsWithIncludes.md",
+  "../../docs/md/variables/comments.commentsWithSymbolLinks.md",
+  "../../docs/md/variables/comments.commentsWithTags.md",
+  "../../docs/md/variables/declarations.__DOUBLE_UNDERSCORES_DECLARATION__.md",
+  "../../docs/md/variables/declarations.getterAndSetter.md",
+  "../../docs/md/variables/declarations.indexableDeclaration.md",
+  "../../docs/md/variables/declarations.objectLiteralAsConstDeclaration.md",
+  "../../docs/md/variables/declarations.objectLiteralDeclaration.md",
+  "../../docs/md/variables/declarations.stringConstWithDefaultValue.md",
+  "../../docs/md/variables/declarations.stringLetWithDefaultValue.md",
+  "../../docs/md/variables/declarations.typeLiteralDeclaration.md",
+  "../../docs/md/variables/declarations.undefinedNumberDeclaration.md",
+  "../../docs/md/variables/members.declarationMember.md",
+  "../../docs/md/variables/theme.declarationItemA.md",
+  "../../docs/md/variables/theme.declarationItemB.md",
+  "../../docs/md/variables/toc._answer.md",
+  "../../docs/md/variables/toc.answer-2.md",
+  "../../docs/md/variables/types.arrayType.md",
+  "../../docs/md/variables/types.barBigInt.md",
+  "../../docs/md/variables/types.externalReference.md",
+  "../../docs/md/variables/types.externalReferenceInsideTypeParams.md",
+  "../../docs/md/variables/types.fooBigInt.md",
+  "../../docs/md/variables/types.htmlElement.md",
+  "../../docs/md/variables/types.literalType.md",
+  "../../docs/md/variables/types.objectLiteralType.md",
+  "../../docs/md/variables/types.stringLiteralType.md",
+  "../../docs/md/variables/types.stringType.md",
+  "../../docs/md/variables/types.tupleType.md",
+  "../../docs/md/variables/types.typeOperatorType.md",
+]
+`;
